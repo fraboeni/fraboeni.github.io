@@ -4,7 +4,7 @@ collection: teaching
 type: "Lecture"
 permalink: /teaching/2019-fall-teaching-spi
 venue: "Freie Universität Berlin, Department of Computer Science"
-date: 2014-01-01
+date: 2019-10-15
 location: "Berlin, Germany"
 ---
 
