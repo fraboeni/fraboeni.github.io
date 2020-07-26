@@ -9,4 +9,4 @@ location: "Berlin, Germany"
 ---
 
 
-Teaching assistant for the Master degree course Security Protocols and Infrastructures. 
+Worked as teaching assistant for the Master level course Security Protocols and Infrastructures. The course treated security protocals (e.g. TLS, PACE, EAC), ASN.1, certificates and related norms such as X.509/RFC5280, and public key infrastructures (PKI).
