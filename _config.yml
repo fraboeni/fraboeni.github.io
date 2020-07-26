@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Franziska Boenisch"
   avatar           : "FranziskaBoenisch.jpg"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Research associate at Fraunhofer AISEC and 1st year PhD candidate at Freie Universität Berlin"
   location         : "Berlin, Germany"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  pubmed           : 
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=jKY0y8gAAAAJ"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "https://github.com/fraboeni"
   google_plus      :
   keybase          :
   instagram        :
