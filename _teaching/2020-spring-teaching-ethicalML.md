@@ -8,7 +8,7 @@ date: 2020-05-15
 location: "Bayreuth, Germany"
 ---
 
-Held a Bachelor level ivited seminary about the ethical implications of ML on society. 
+Held a Bachelor level invited seminary about the ethical implications of ML on society. 
 The seminary consisted of a technical / computer science as well as a philosophical part.
 In the technical part, theoretical background as well as implementation details of ML algorithms were presented.
 The philosophy part treated subjects as the Turing test, the Chinese room argument, and discussions about dataism, surveillance, autonomous driving and autonomous weapon systems.
