@@ -11,4 +11,3 @@ citation: 'Boenisch, Franziska. (2017). &quot;Feature engineering and probabilis
 
 [Download paper here](https://www.mi.fu-berlin.de/inf/groups/ag-ki/Theses/Completed-theses/Bachelor-theses/2017/Boenisch/Bachelor-Boenisch.pdf)
 
-Recommended citation: Boenisch, Franziska. (2017). "Feature engineering and probabilistic tracking on honey bee trajectories." <i>Bachelor Thesis</i>. Freie Universität Berlin.
