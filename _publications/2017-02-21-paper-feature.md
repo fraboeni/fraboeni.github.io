@@ -2,7 +2,7 @@
 title: "Feature engineering and probabilistic tracking on honey bee trajectories"
 collection: publications
 permalink: /publication/2017-02-21-paper-feature
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+excerpt: 'Feature engineering and model tuning to perform visual tracking of marked honey bees on a hive.'
 date: 2017-02-21
 venue: 'Bachelor Thesis, Freie Universität Berlin'
 paperurl: 'https://github.com/fraboeni/fraboeni.github.io/blob/master/files/Bachelor-Boenisch.pdf'
