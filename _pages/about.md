@@ -15,4 +15,4 @@ My research interest lies at the intersection of *Machine Learning* (ML) and *Da
 Therefore, protecting privacy in ML models is a crucial task. I’m currently mainly researching in the area of *Differential Privacy*, a mathematical framework that provides formal privacy guarantees. Furthermore, my interest lies in the quantification of privacy loss and in the “translation” between a formal value of a privacy guarantees and real-world implications.
 
 # Teaching
-I’m also teaching security realted courses at the computer science department of Freie Universität Berlin. Furthermore, I am supervising Bachelor and Master theses in the area of privacy preserving and secure ML. Check out the “Open Theses” part to find open positions and ongoing projects. 
+I’m also teaching security realted courses at the computer science department of Freie Universität Berlin. Furthermore, I am supervising Bachelor and Master theses in the area of privacy preserving and secure ML. Check out the [Open Theses](https://fraboeni.github.io/theses/) part to find open positions and ongoing projects. 
