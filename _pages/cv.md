@@ -31,7 +31,7 @@ Work experience
 
 * 01/2016 - 07/2016: Working Student
   * Fraunhofer Institute FOKUS, Berlin, Germany
-  * Duties included: Merging pull requests
+  * Duties included: Implementing scientific demonstrators for predictive maintenance with Apache Spark and Flink
   * Supervisor: Prof. Dr. Adrian Paschke
   
 
