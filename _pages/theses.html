@@ -9,7 +9,7 @@ author_profile: true
 This page provides an overview on open theses positions, theses I am currently supervising and completed theses I have supervised in the past.
 
 <h2>Open Theses</h2>
-{% for post in site.theses reversed %}
+{% for post in site.theses.on reversed %}
   {% include archive-single.html %}
 {% endfor %}
 
