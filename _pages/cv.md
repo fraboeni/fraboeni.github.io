@@ -11,30 +11,29 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+
+* M.S. in Computer Science, Freie University Berlin (Germany), 2019
+* Exchange semester, Eindhoven University of Technology (Netherlands), 2019 
+* B.S. in Computer Science, Freie University (Germany), 2017
+* Research stay, National Chung Cheng University (Taiwan), 2016
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 09/2017 - 01/2019: Research Assistant
+  * Dahlem Center for Machine Learning and Robotics, Freie University Berlin, Germany
+  * Duties included: Programming tasks in MATLAB and Python, literature research for projects, support writing of scientific papers and funding applications
+  * Supervisor: Prof. Dr. Tim Landgraf
   
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* 08/2016 - 10/2016: Visiting Undergraduate with DAAD RISE scholarship
+  * National Chung Cheng University, Chiayi, Taiwan
+  * Duties included: Implementing neural networks for food image classification
+  * Supervisor: Prof. Ph.D. Wei-Ta Chu
+
+* 01/2016 - 07/2016: Working Student
+  * Fraunhofer Institute FOKUS, Berlin, Germany
+  * Duties included: Merging pull requests
+  * Supervisor: Prof. Dr. Adrian Paschke
+  
 
 Publications
 ======
@@ -54,6 +53,4 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* 
+
