@@ -187,7 +187,10 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-  theses:
+  theses.on:
+    output: true
+    permalink: /:collection/:path/
+  theses.ongoing:
     output: true
     permalink: /:collection/:path/
 
