@@ -45,19 +45,9 @@ redirect_from:
 * 2016, *DAAD*, [RISE Worlwide](https://www.daad.de/rise/en/rise-worldwide/) Research Scholarship
 * 2015-2019, *Studienstiftung des Deutschen Volkes*, [Scholarships for Outstanding Students](https://www.studienstiftung.de/en/about-us/)
 
-## Publications
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
 ## Talks
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-## Teaching
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
 
