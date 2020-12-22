@@ -42,7 +42,7 @@ Education
  
 Prizes and Honors
 ======
-* 2020,[*Forum Junge Spitzenforscher*](http://forumjungespitzenforscher.de/en/review-2020/), 3rd prize in the competition for applied science in AI
+* 2020, [*Forum Junge Spitzenforscher*](http://forumjungespitzenforscher.de/en/review-2020/), 3rd prize in the competition for applied science in AI
 * 2019-2021, *Fraunhofer-Gesellschaft*, [Talenta Start Scholarship](https://www.fraunhofer.de/de/jobs-und-karriere/wissenschaftlerinnen/fraunhofer-talenta/start.html)
 * 2018, *Hasso Plattner Institute*, [Grace Hopper Travel Scholarship](https://hpi.de/news/jahrgaenge/2018/grace-hopper-celebration-stipendiatinnen-reisen-in-die-usa.html)
 * 2016, *DAAD*, [RISE Worlwide](https://www.daad.de/rise/en/rise-worldwide/) Research Scholarship
