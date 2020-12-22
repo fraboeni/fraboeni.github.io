@@ -16,7 +16,7 @@ This page provides an overview on my teaching experience so far.
 
 | Teaching Assistant |                                                               |
 | ---------          |:---------                                                      |
-| Winter 2020/21     | *Lecture:* [Security Protocols and Infrastructure](https://fraboeni.github.io/teaching/2019-fall-teaching-spi)     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;      |
+| Winter 2020/21     | *Lecture:* [Security Protocols and Infrastructure](https://fraboeni.github.io/teaching/2019-fall-teaching-spi)     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     |
 | Winter 2019/20     | *Lecture:* [Security Protocols and Infrastructure](https://fraboeni.github.io/teaching/2019-fall-teaching-spi)               |
 
 
