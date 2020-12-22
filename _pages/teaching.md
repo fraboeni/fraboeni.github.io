@@ -8,7 +8,7 @@ author_profile: true
 This page provides an overview on my teaching experience so far.
 
 
-| <div style="width:290px">Lecturer</div>           |                                                                |
+| <div style="width:400px">Lecturer</div>           |                                                                |
 | ---------          |:---------                                                      |
 | Summer 2021        | *Software project:* Privacy Quantification in Machine Learning |
 | Summer 2020        | *Seminar:* Hello (brand new data) world                        |
@@ -16,7 +16,7 @@ This page provides an overview on my teaching experience so far.
 
 
 
-| <div style="width:290px">Teaching Assistant</div> |                                                                |
+| <div style="width:400px">Teaching Assistant</div> |                                                                |
 | ---------          |:---------                                                      |
 | Winter 2020/21     | *Lecture:* Security Protocols and Infrastructure               |
 | Winter 2019/20     | *Lecture:* Security Protocols and Infrastructure               |
