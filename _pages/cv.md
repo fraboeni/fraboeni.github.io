@@ -19,6 +19,11 @@ Education
 
 Work experience
 ======
+* 09/2019 - current: Researcher
+  * Department of Secure Systems Engineering, Fraunhofer AISEC, Germany
+  * Duties included: Working in industrial and academic research projects concerning private machine learning and data protection
+  * Supervisor: Prof. Dr. Marian Margraf
+  
 * 09/2017 - 01/2019: Research Assistant
   * Dahlem Center for Machine Learning and Robotics, Freie University Berlin, Germany
   * Duties included: Programming tasks in MATLAB and Python, literature research for projects, support writing of scientific papers and funding applications
