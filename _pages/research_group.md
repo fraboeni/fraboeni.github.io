@@ -9,7 +9,9 @@ This page provides an overview on current activities of the *PrivML* research gr
 centered around privacy-preserving machine learning. 
 
 ## Currently ongoing theses
+
 | Student          | Program| Topic                                                        |
+| --------- |:---|:---------|
 | C. Müller        | Master | Personalized Differential Privacy                            |
 | W. Gu            | Bachelor | Differential Private Synthetic Data Generation               |
 | T. Känel         | Bachelor   | Practical Evaluation of Neural Network Watermarking      |
@@ -19,7 +21,9 @@ centered around privacy-preserving machine learning.
 | D. Sosnovchyk    | Bachelor   | Synthetic Data Privacy Evaluation     |
 
 ## Past theses
-| Student          | Program| Thesis Title                                                 |
+
+| Student          | Program| Thesis Title 
+| --------- |:---|:---------|
 | M. Krüger    | Bachelor   | Application and Evaluation of Differential Privacy in Health Data Classification Tasks|
 
 ## Open topics
