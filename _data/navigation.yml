@@ -6,11 +6,11 @@ main:
   - title: "Teaching"
     url: /teaching/    
     
-  - title: "Open Theses"
-    url: /theses/    
+  - title: "Research Group"
+    url: /research_group/    
         
   - title: "Blog Posts"
-    url: /year-archive/
+    url: /privML_blog/
     
   - title: "CV"
     url: /cv/
