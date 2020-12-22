@@ -23,3 +23,11 @@ centered around privacy-preserving machine learning.
 | Student          | Program| Thesis Title                                                 |
 | --------         | ------ | ------------------------------------------------------------ |
 | M. Krüger    | Bachelor   | Application and Evaluation of Differential Privacy in Health Data Classification Tasks|
+
+## Open topics
+
+Currently, the following topics are available:
+* Side Channel Attacks against Neural Networks (Master)
+* Bias in AI (Bachelor/Master)
+
+For a concrete description of the topics, please get in touch.
