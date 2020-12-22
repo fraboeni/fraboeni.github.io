@@ -8,6 +8,12 @@ author_profile: true
 This page provides an overview on current activities of the *PrivML* research group I am building up. The topics are mainly (but not exclusively) 
 centered around privacy-preserving machine learning. 
 
+|             |          Grouping           ||
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+Content       |          *Long Cell*        ||
+
+
 | Ongoing Theses                                                                           |
 | Student          | Program|  Topic                                                       |
 | ===========      | ------ | ------------------------------------------------------------ |
