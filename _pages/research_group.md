@@ -9,6 +9,7 @@ This page provides an overview on current activities of the *PrivML* research gr
 centered around privacy-preserving machine learning. 
 
 | Ongoing Theses   |        |                                                              |
+| --------         | ------ | ------------------------------------------------------------ |
 | Student          | Program|  Topic                                                       |
 | --------         | ------ | ------------------------------------------------------------ |
 |                  | 2016   | Description of the item in the list                          |
