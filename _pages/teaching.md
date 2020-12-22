@@ -20,7 +20,7 @@ This page provides an overview on my teaching experience so far.
 | Winter 2019/20     | *Lecture:* [Security Protocols and Infrastructure](https://fraboeni.github.io/teaching/2019-fall-teaching-spi)               |
 
 
-| Guest Lectures   &nbsp;&nbsp; &nbsp; | Course and link to my guest lecture                                                             |
+| Guest Lectures   &nbsp;&nbsp;&nbsp; &nbsp; | Course and link to my guest lecture                                                             |
 | ---------          |:---------                                                      |
 | Winter 2020/21     | *Course:* Human-Centered Data Science ([lecture](https://fraboeni.github.io/talks/2021-02-01-talk-4)), Prof. Dr. Claudia Müller-Birn      &nbsp; &nbsp; &nbsp; &nbsp;       |
 | Winter 2020/21     | *Course:* Usable Privacy and Security ([lecture](https://fraboeni.github.io/talks/2021-01-12-talk-3)), Dr. Maija Poikela               |
