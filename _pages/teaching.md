@@ -8,7 +8,7 @@ author_profile: true
 This page provides an overview on my teaching experience so far.
 
 
-| Lecturer &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;           |                                                               |
+| Lecturer &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;           |                                                               |
 | ---------          |:---------                                                      |
 | Summer 2021        | *Software project:* Privacy Quantification in Machine Learning |
 | Summer 2020        | *Seminar:* Hello (brand new data) world                        |
