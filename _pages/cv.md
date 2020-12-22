@@ -9,15 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-
-* M.S. in Computer Science, Freie University Berlin (Germany), 2019
-* Exchange semester, Eindhoven University of Technology (Netherlands), 2019 
-* B.S. in Computer Science, Freie University (Germany), 2017
-* Research stay, National Chung Cheng University (Taiwan), 2016
-
-Work experience
+Professional Affiliations
 ======
 * 09/2019 - current: Researcher
   * Department of Secure Systems Engineering, Fraunhofer AISEC, Germany
@@ -38,7 +30,23 @@ Work experience
   * Fraunhofer Institute FOKUS, Berlin, Germany
   * Duties included: Implementing scientific demonstrators for predictive maintenance with Apache Spark and Flink
   * Supervisor: Prof. Dr. Adrian Paschke
-  
+
+Education
+======
+
+* M.S. in Computer Science, Freie University Berlin (Germany), 2019
+* Exchange semester, Eindhoven University of Technology (Netherlands), 2019 
+* B.S. in Computer Science, Freie University (Germany), 2017
+* Research stay, National Chung Cheng University (Taiwan), 2016
+ 
+ 
+Prizes and Honors
+======
+* 2020, 3rd prize in the [Forum Junge Spitzenforscher](http://forumjungespitzenforscher.de/en/review-2020/) competition for applied science in AI
+* 2019-2021, Fraunhofer-Gesellschaft, [Talenta Start scholarship](https://www.fraunhofer.de/de/jobs-und-karriere/wissenschaftlerinnen/fraunhofer-talenta/start.html)
+* 2018, Hasso Plattner Institute, [Grace Hopper Travel Scholarship](https://hpi.de/news/jahrgaenge/2018/grace-hopper-celebration-stipendiatinnen-reisen-in-die-usa.html)
+* 2016, DAAD, [RISE Worlwide](https://www.daad.de/rise/en/rise-worldwide/) Research Scholarship
+* 2015-2019, Studienstiftung des Deutschen Volkes, [Scholarships for Outstanding Students](https://www.studienstiftung.de/en/about-us/)
 
 Publications
 ======
