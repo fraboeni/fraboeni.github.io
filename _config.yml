@@ -14,7 +14,7 @@ description              : &description "personal description"
 url                      : https://fraboeni.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "fraboeni/fraboeni.github.io"
-teaser                   :  "500x300.png"# filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   :  "500x300.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Franziska Boenisch"
-  avatar           : 
+  avatar           : "FranziskaBoenisch.jpg"
   bio              : "Research associate<br/>@ Fraunhofer AISEC<br/><br/>1st year PhD candidate<br/>@ Freie Universität Berlin<br/><br/>Research focus:<br/>Privacy Preserving ML"
   location         : "Berlin, Germany"
   employer         :
