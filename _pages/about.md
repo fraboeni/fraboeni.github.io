@@ -3,7 +3,7 @@ permalink: /
 title: "Home"
 author_profile: true
 image: "/images/500x300.png"
-description: "I am a researcher interested in privacy-preserving machine learning working at Fraunhofer AISEC and doing my PhD at the Freie University Berlin."
+excerpt_separator: "I am a researcher interested in privacy-preserving machine learning working at Fraunhofer AISEC and doing my PhD at the Freie University Berlin."
 redirect_from: 
   - /about/
   - /about.html
