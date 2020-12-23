@@ -2,7 +2,6 @@
 permalink: /
 title: "Home"
 author_profile: true
-header: /images/500x300.png
 redirect_from: 
   - /about/
   - /about.html
