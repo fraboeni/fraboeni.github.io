@@ -46,7 +46,7 @@ redirect_from:
 * 2015-2019, *Studienstiftung des Deutschen Volkes*, [Scholarships for Outstanding Students](https://www.studienstiftung.de/en/about-us/)
 
 ## Talks
-  <ul>{% for post in site.talks %}
+  <ul>{% for post in site.talks reversed  %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
