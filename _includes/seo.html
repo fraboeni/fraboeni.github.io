@@ -4,7 +4,12 @@
 {% if site.url %}
   {% assign seo_url = site.url | append: site.baseurl %}
 {% endif %}
+{% if page.url %}
+  {% assign seo_url = site.url | append: page.url %}
+{% endif %}
 {% assign seo_url = seo_url | default: site.github.url %}
+
+
 
 {% if page.title %}
   {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
