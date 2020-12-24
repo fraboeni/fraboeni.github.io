@@ -2,9 +2,9 @@
 
 <!-- begin SEO -->
 {% if site.url %}
-  {% assign seo_url = site.url | append: "franziska-boenisch.de" %}
+  {% assign seo_url = "www.franziska-boenisch.de" %}
 {% endif %}
-{% assign seo_url = seo_url | default: "franziska-boenisch.de" %}
+{% assign seo_url = "www.franziska-boenisch.de" %}
 
 {% if page.title %}
   {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
