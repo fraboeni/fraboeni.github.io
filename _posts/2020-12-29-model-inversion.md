@@ -3,10 +3,10 @@ title: "Attacks against Machine Learning Privacy (Part 1): Model Inversion Attac
 date: 2020-12-29
 excerpt: "In this first blogpost of my series about privacy attacks against machine learning models I introduce model inversion attacks and show you how to implement them with TensorFlow 2 and the IBM Adversarial Robustness Toolbox."
 permalink: /posts/2020/12/model-inversion/
-image: mstile-310x310.png
+image: 2020-12-29-model-inversion.png
 canonical_url: 'https://blog.franziska-boenisch.de'
 header:
-  teaser: mstile-310x310.png
+  teaser: 2020-12-29-model-inversion.png
 tags:
   - machine learning
   - privacy
