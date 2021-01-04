@@ -16,7 +16,7 @@ centered around privacy-preserving machine learning.
 | W. Gu            | Bachelor | Differential Private Synthetic Data Generation               |
 | T. Känel         | Bachelor   | Practical Evaluation of Neural Network Watermarking      |
 | J. Ihring        | Master   | Privacy Quantification Methods      |
-| O. Bouhanani     | Bachelor   | Neural Network Architectural Choices for Privacy      |
+| O. Bouanani     | Bachelor   | Neural Network Architectural Choices for Privacy      |
 | D. Wang          | Bachelor   | Novel Methods for Neural Network Watermarking     |
 | D. Sosnovchyk    | Bachelor   | Synthetic Data Privacy Evaluation     |
 
