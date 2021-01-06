@@ -15,3 +15,5 @@ Therefore, protecting privacy in ML models is a crucial task. I’m currently ma
 
 
 If you are interested in the activities of the *PrivML* research group I am building up, check out the tab [Research Group](https://fraboeni.github.io/research_group/). 
+
+Also, we are currently *hiring*. If you are looking for a *full-time PhD position* in the area of Differential Privacy and Machine Learning, please get in touch with me.
