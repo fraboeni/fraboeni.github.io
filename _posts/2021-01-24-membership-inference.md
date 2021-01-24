@@ -35,8 +35,7 @@ We’ll first have a look on what membership inference actually means and how it
 Afterwards, we’ll go into some more details exploring how those attacks work on a low level. 
 Then, we’ll use the TensorFlow Privacy library in order to conduct an attack on an ML classifier ourselves. 
 You will see that it is pretty easy, with this powerful tool. 
-I will also briefly show you some factors that increase a model’s vulnerability against membership inference attacks. 
-Based on those, at the end, I will conclude with some words about the mitigation of the attack.
+I will also briefly mention some factors that increase a model’s vulnerability against membership inference attacks and on protection measures.
 
 ## Part 1: Membership Inference Attacks
 Membership inference attacks were first described by Shokri et al. \[1\] in 2017. 
@@ -309,7 +308,7 @@ plotting.plot_roc_curve(attacks_result.get_result_with_max_auc().roc_curve)
 In the following weeks, I am planning to write another blogpost about the papers \[2\] and \[3\] in order to explain in a bit more detail how the results can be interpreted. For the time being, you can just accept the results as is and use them to compare between classifiers trained with different parameters and methods.  I strongly encourage you to use my [notebook]() to play around with some parameters (training epochs, batch size etc.) in order to get a feeling how those parameters might influence membership privacy.
 
 
-### Factors Influencing the Risk for Membership Inference Attacks 
+### Factors Influencing the Risk for Membership Inference Attacks and Protection Measures
 There has been quite some research conducted about factors that encourage membership inference attacks.
 For example \[3\] and \[4\] deal with the question of identifying factors that influence membership inference risks in ML models.
 Those factors are:
@@ -318,6 +317,12 @@ Those factors are:
 - in-class standard deviation
 - type of ML model targeted.
 
+For those of you interested in the topic, I suggest going through the papers for a deeper understanding of why these factors might have an influence.
+
+Apart from training models that do not overfit the training data too much, a method that helps preventing membership inference risk is called Differential Privacy. 
+I would definitely like to introduce you to this concept in one of my future blogposts.
+
+I hope that my post was helpful for you, if you have any further questions, remarks, or suggestions, please get in touch!
 
 
 
