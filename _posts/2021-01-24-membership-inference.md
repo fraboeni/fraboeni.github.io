@@ -45,95 +45,23 @@ to measure the membership risk of a given model, and to mitigate the risks.
 
 <figure style="width:60%;">
     <img src="{{ "/files/2021-01-24-membership-inference/pic1-membership-inference.png" | prepend: base_path }}"
-     alt='machine learning workflow'/>
-    <figcaption>A typical ML workflow.</figcaption>
+     alt='concept of membership inference attacks'/>
+    <figcaption>The concept of membership inference attacks.</figcaption>
 </figure>
 
+Let’s first have a superficial look on the topic before diving deep into the algorithmic background and attack structure.
+
+### Overview on Membership Inference Attacks
+The aim of a membership inference attack is quite straight forward: Given a trained ML model and some data point, decide whether this point was part of the model’s training sample or not. If you can’t see the privacy risk of it straight away, don’t worry. But think of the following situation:
+
+> Imagine you are in a clinical context. There, you may have an ML model that is supposed to predict an adequate medical treatment for cancer patients. This model, logically, needs to be trained on the data of cancer patients. Hence, given a data point, if you are able to find out, that it was indeed part of the model’s training data, then you know that the corresponding patient must have cancer. As a consequence, this patient’s privacy would be disclosed. 
 
 
-Let's get started with building our own model inversion: 
-When you are working with tensorflow 2, the first thing to make sure is that you disable the eager execution because otherwise IBM-ART would not work. Therefore, just add the following line after your tensorflow import:
 ```python
 import tensorflow as tf
 tf.compat.v1.disable_eager_execution()
   ```
  
-From IBM-ART, you mainly need to import the two following things:
-```python
-from art.attacks.inference import model_inversion 
-from art.estimators.classification import KerasClassifier
-```
-The `KerasClassifier` is a wrapper for your `tf.keras` model in order to be used by the attacks. Apart from this, the workflow is pretty similar as every other ML workflow.
-
-First, we need to specify a model architecture. I chose for a simple ConvNet architecture, but you are, of course, not limited to that.
-```python
-def make_model():
-  """ Define a Keras model"""
-  model = tf.keras.Sequential([
-      tf.keras.layers.Conv2D(16, 8,
-                              strides=2,
-                              padding='same',
-                              activation='relu',
-                              input_shape=(28, 28, 1)),
-      tf.keras.layers.MaxPool2D(2, 1),
-      tf.keras.layers.Conv2D(32, 4,
-                              strides=2,
-                              padding='valid',
-                              activation='relu'),
-      tf.keras.layers.MaxPool2D(2, 1),
-      tf.keras.layers.Flatten(),
-      tf.keras.layers.Dense(32, activation='relu'),
-      tf.keras.layers.Dense(10, activation='softmax')
-  ])
-  return model
-```
-After you've built the model, you can compile it with parameters of your choice:
-
-```python
-model = make_model()
-optimizer = tf.keras.optimizers.SGD(learning_rate=0.1)
-loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
-model.compile(optimizer=optimizer, loss=loss, metrics=['accuracy'])
-```
-
-Then, before training on MNIST training data and labels that I stored in the variables `train_data` and `train_labels` after preprocessing, you need to put the model into the wrapper:
-```python
-classifier = KerasClassifier(model=model, clip_values=(0, 1), use_logits=False)
-classifier.fit(train_data, train_labels,
-           batch_size=264, nb_epochs=10)
-```
-
-Once the model is trained, we can start attacking it.
-```python
-my_attack = model_inversion.MIFace(classifier)
-```
-
-The model inverson attack in the IBM-ART offers you to specify arrays $x$ and $y$. $y$ contains class labels for the classes to be attacked. $x$ contains the initial input to the classifier under attack for each class label. (This corresponds to $x_0$ in our algorithm above.) When $x$ is not specified, a zero array is used as an initial input to the classifier for inversion.
-
-I ran the experiment with different numbers of training epochs and this is the result:
-<figure style="width:40%;">
-    <img src="{{ "/files/2020-12-22-blog-post-00/restored_1.png" | prepend: base_path }}"
-     alt='model inversion attack results after training one epoch'/>
-    <figcaption>1 epoch of training: Restored training data class representations through model inversion.</figcaption>
-</figure>
-<figure style="width:40%;">
-    <img src="{{ "/files/2020-12-22-blog-post-00/restored_10.png" | prepend: base_path }}"
-     alt='model inversion attack results after training ten epochs'/>
-    <figcaption>10 epochs of training: Restored training data class representations through model inversion.</figcaption>
-</figure>
-<figure style="width:40%;">
-    <img src="{{ "/files/2020-12-22-blog-post-00/restored_100.png" | prepend: base_path }}"
-     alt='model inversion attack results after training 100 epoche'/>
-    <figcaption>100 epochs of training: Restored training data class representations through model inversion.</figcaption>
-</figure>
-
-*Note:* The data that is returned by the model inversion attack somehow is an average representation of the data that belongs to the specific classes. In the presented setting, it does not allow for an inversion of individual training data points. In the Fredrikson example, however, every individual within the face classifier represents their own class. Therefore, the attack can be used in order to retrieve information about individuals and break their privacy. 
-
-It turns out that especially when the classifier is trained only for one epoch, many of the inversed digit representations are somehow recognizable.
-I hope that this example was useful for you in order to understand how simply your ML models can be attacked nowadays, and how easily you can implement privacy attacks with help of the right tools.
-
-If you have any questions, comments, suggestions, or corrections, please feel free to get in touch.
-
 
 
 
