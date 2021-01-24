@@ -56,7 +56,8 @@ The aim of a membership inference attack is quite straight forward: Given a trai
 
 > Imagine you are in a clinical context. There, you may have an ML model that is supposed to predict an adequate medical treatment for cancer patients. This model, logically, needs to be trained on the data of cancer patients. Hence, given a data point, if you are able to find out, that it was indeed part of the model’s training data, then you know that the corresponding patient must have cancer. As a consequence, this patient’s privacy would be disclosed. 
 
-I hope that with this example I could convince you of the importance of membership privacy. Basically in any context where the sheer fact of being included in a sample can be privacy disclosing, membership inference attacks pose a severe risk.
+I hope that with this example I could convince you of the importance of membership privacy. 
+Basically, in any context where the sheer fact of being included in a sample can be privacy disclosing, membership inference attacks pose a severe risk.
 
 
 ### How do Membership Inference Attacks Work?
@@ -68,11 +69,11 @@ Most membership inference attacks work similar as the original example described
     <figcaption>The basic idea on how to perform membership inference attacks.</figcaption>
 </figure>
 
-In order to train this meta-classifier $f_{attack}$, $k$*shadow models* $f_{shaddow}^j$  are constructed. 
+In order to train this meta-classifier $f_{attack}$, $k$ *shadow models* $f_{shaddow}^j$  are constructed. 
 Those models are supposed to imitate the behaviour of the original ML model $f$. 
 However, their training data $X’$, i.e. the ground truth $y’$ for the binary classifications, is known to the attacker. 
 
-By using the knowledge about the shadow models’ training data, input output-pairs $(x’_i, f_{shaddow}^j; y’_i)$ for the meta-classifier can be constructed, 
+By using the knowledge about the shadow models’ training data, input output-pairs $ (x’_i, f_{shaddow}^j; y’_i) $ for the meta-classifier can be constructed, 
 such that it learns the task of distinguishing between members and non-members based on an ML model’s behavior on them.
 
 <figure style="width:60%;">
@@ -89,6 +90,7 @@ They showed that with this setting, a membership inference attack can even be tr
 ## Implementing Membership Inference Attacks 
 There are several tools for implementing membership inference attacks. The two that I am most familiar with are the IBM-ART framework that I used in [my last blogpost](/posts/2020/12/model-inversion/) in order to implement model inversion attacks, and [TensorFlow Privacy’s Memberhip Inference]( https://github.com/tensorflow/privacy/tree/master/tensorflow_privacy/privacy/membership_inference_attack). For my purposes (mainly trying to quantify privacy of a given model), so far, the TensorFlow version has proven more useful, as on my use cases, the attacks were more successful. 
 Therefore, we are going to look on an implementation of membership inference attacks with TensorFlow Privacy in the following. 
+Similar as last time, I uploaded you a notebook with my entire [code]().
 
 ### TensorFlow Privacy’s Membership Inference-Framework
 In my opinion, the usability of TensorFlow Privacy’s Membership Inference attack has had its ups and downs in the last months. For a long time, TensorFlow Privacy used to work with TensorFlow version 1 only. For me, this included a lot of hassle by continuously changing between virtual environments with TensorFlow version 1 and 2 in order to take the maximum capabilities out of both. 
@@ -96,7 +98,7 @@ Then, by the end of 2020, TensorFlow Privacy was successfully updated to work wi
 However, in my opinion, there is still some struggle ongoing if you want to include the membership inference attacks into longer-lasting projects: For example, if I am not mistaken, the interface of TensorFlow Privacy’s membership inference has been updated and changed completely WITHOUT a version number increase so far (stayed 0.5.1 all along). So, don’t be confused if your package 0.5.1 has entirely different code that the one that you find in the online repo, or if you can’t get your old code to run. 
 In order to stay always up to date, the helpful community suggested to me to use the following 
 ```
-!pip install -U git+https://github.com/tensorflow/privacy
+pip install -U git+https://github.com/tensorflow/privacy
 ```
 and it works.
 
@@ -118,13 +120,55 @@ It consists of 60000 32x32 colour images in 10 classes, with 6000 images per cla
     <figcaption>Example images of the CIFAR10 dataset.</figcaption>
 </figure>
 
+With the three color channels and the details, the dataset is more complex than MNIST. 
+Yet, we will use a faily simple architecture here that does not achieve amazing results, but is enough for our purpose, namely, having a trained model to attack.
+
 ```python
-import tensorflow as tf
-tf.compat.v1.disable_eager_execution()
+Model Architecture.
   ```
  
+In order to use TensorFlow Privacy’s membership inference attack, we need to import it with
+```python
+from tensorflow_privacy.privacy.membership_inference_attack import membership_inference_attack as mia
+from tensorflow_privacy.privacy.membership_inference_attack.data_structures import AttackInputData
+from tensorflow_privacy.privacy.membership_inference_attack.data_structures import SlicingSpec
+from tensorflow_privacy.privacy.membership_inference_attack.data_structures import AttackType
+```
 
+The first line imports the membership inference attack itself. The following lines import data structures needed in the course of conducting the attack.
 
+In my opinion, the library offers so many different functionalities, that for a non-expert it is nearly a little difficult to identify the right setting even though the [README]( https://github.com/tensorflow/privacy/tree/master/tensorflow_privacy/privacy/membership_inference_attack) is very helpful.
+
+However, for some information (e.g., what data you must provide, and which one is optional, or what type this data should have), you need to dive deep into the code. Therefore, I tried to sum up for you what I found out.
+
+#### AttackInputData
+* AttackInputData* is used to specify what information $f_{attack}$ will receive. As we have clarified above, $f_{attack}$ is the binary classifier trained to predict, based on a target model $f$’s output on a data point, whether this data point was part of the training data or not. And exactly the output of our model $f$ can be provided to the attack via the `AttackInputData` data structure. You can  specify 
+- `train and test loss`
+- `train and test labels` (as integer arrays)
+- `train and test entropy`
+- `train and test logits` or `train and test probabilities` over all given classes. As the latter ones depend on the former ones, they can only be specified if no logits are provided. Either labels, logits, losses or entropy should be set in order to be able to perform the attack.
+
+I have never worked with the entropy option so far, but the other values could potentially be obtained from your trained model with the following code.:
+```python
+print('Predict on train...')
+logits_train = model_10.predict(train_data)
+print('Predict on test...')
+logits_test = model_10.predict(test_data)
+
+print('Apply softmax to get probabilities from logits...')
+prob_train = special.softmax(logits_train, axis=1)
+prob_test = special.softmax(logits_test, axis=1)
+
+print('Compute losses...')
+cce = tf.keras.backend.categorical_crossentropy
+constant = tf.keras.backend.constant
+
+y_train_onehot = to_categorical(train_labels)
+y_test_onehot = to_categorical(test_labels)
+
+loss_train = cce(constant(y_train_onehot), constant(prob_train), from_logits=False).numpy()
+loss_test = cce(constant(y_test_onehot), constant(prob_test), from_logits=False).numpy()
+```
 
 
 ### Further Reading
