@@ -34,7 +34,7 @@ For a formal and thorough introduction to ML, you may want to check out other re
 
 Imagine, you would like to train a classifier. Usually, you start with some (potentially sensible) training data, i.e. some data features $X$ and corresponding class labels $y$. You pick an algorithm, e.g. a neural network (NN), and then you use your training data to make the model learn to map from $X$ to $y$. This mapping should generalize well, such that your model is also able to predict the correct labels for, so far, unseen data $X'$.
 
-<figure style="width:30%;">
+<figure style="width:60%;">
     <img src="{{ "/files/2020-12-22-blog-post-00/01_ML-workflows.png" | prepend: base_path }}"
      alt='machine learning workflow'/>
     <figcaption>A typical ML workflow.</figcaption>
@@ -51,7 +51,7 @@ This is because it enables someone with access to the ML model to deduct differe
 A very popular attack is the so-called *model inversion attack* that was first proposed by [Fredrikson et al.](https://www.cs.cmu.edu/~mfredrik/papers/fjr2015ccs.pdf) in 2015.
 The attack uses a trained classifier in order to extract representations of the training data.
 
-<figure style="width:40%;">
+<figure style="width:70%;">
     <img src="{{ "/files/2020-12-22-blog-post-00/01_ML-workflows-inversion.png" | prepend: base_path }}"
      alt='machine learning workflow'/>
     <figcaption>The idea of a model inversion attack.</figcaption>
@@ -65,7 +65,7 @@ The authors define a cost function $c(x)$ concerning $f$ in order to do the mode
 
 Let's have a concrete look at the algorithm specified in the Fredrikson paper with the parameters being: $label$: label of the class we want to inverse, $\alpha$: number of iterations to calculate, $\beta$: a form of patience: if the cost does not decrease within this number of iterations, the algorithm stops, $\gamma$: minimum cost threshold, $\lambda$: learning rate for the gradient descent, and $AUXTERM$: a function that uses any available auxiliary information to inform the cost function. (In the case of simple inversion, there exists no auxiliary information, i.e. $AUXTERM=0$ for all $x$.)
 
-<figure style="width:40%;">
+<figure style="width:70%;">
     <img src="{{ "/files/2020-12-22-blog-post-00/mi-algorithm.png" | prepend: base_path }}"
      alt='model inversion algorithm'/>
     <figcaption>The model inversion algorithm. Taken from [1].</figcaption>
@@ -75,7 +75,7 @@ As we can see, in the algorithm the cost function is defined based on $f$'s pred
 
 At the end of the algorithm, the minimal costs and the corresponding $x_i$ are returned. As, in the case of Fredrikson, each individual corresponds to a separate class label, the model inversion can be used in order to reconstruct concrete faces, such as the following:
 
-<figure style="width:40%;">
+<figure style="width:70%;">
     <img src="{{ "/files/2020-12-22-blog-post-00/restored_face.png" | prepend: base_path }}"
      alt='model inversion attack results by fredrikson'/>
     <figcaption>Original face image (right) and restored one through model inversion (left). Picture taken from [1].</figcaption>
@@ -97,7 +97,7 @@ IBM-ART offers a broad range of [example notebooks](https://github.com/Trusted-A
 
 I decided to use the MNIST dataset which consists of 60.000 training and 10.000 test black and white images of the digits from 0 to 9 with the corresponding labels, such as:
 
-<figure style="width:40%;">
+<figure style="width:70%;">
     <img src="{{ "/files/2020-12-22-blog-post-00/mnist_digits.png" | prepend: base_path }}"
      alt='illustration of mnist digits'/>
     <figcaption>The first ten digits in the MNIST training dataset with corresponding labels.</figcaption>
@@ -163,17 +163,17 @@ my_attack = model_inversion.MIFace(classifier)
 The model inverson attack in the IBM-ART offers you to specify arrays $x$ and $y$. $y$ contains class labels for the classes to be attacked. $x$ contains the initial input to the classifier under attack for each class label. (This corresponds to $x_0$ in our algorithm above.) When $x$ is not specified, a zero array is used as an initial input to the classifier for inversion.
 
 I ran the experiment with different numbers of training epochs and this is the result:
-<figure style="width:40%;">
+<figure style="width:70%;">
     <img src="{{ "/files/2020-12-22-blog-post-00/restored_1.png" | prepend: base_path }}"
      alt='model inversion attack results after training one epoch'/>
     <figcaption>1 epoch of training: Restored training data class representations through model inversion.</figcaption>
 </figure>
-<figure style="width:40%;">
+<figure style="width:70%;">
     <img src="{{ "/files/2020-12-22-blog-post-00/restored_10.png" | prepend: base_path }}"
      alt='model inversion attack results after training ten epochs'/>
     <figcaption>10 epochs of training: Restored training data class representations through model inversion.</figcaption>
 </figure>
-<figure style="width:40%;">
+<figure style="width:70%;">
     <img src="{{ "/files/2020-12-22-blog-post-00/restored_100.png" | prepend: base_path }}"
      alt='model inversion attack results after training 100 epoche'/>
     <figcaption>100 epochs of training: Restored training data class representations through model inversion.</figcaption>
