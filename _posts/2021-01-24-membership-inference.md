@@ -184,6 +184,75 @@ loss_test = cce(constant(y_test_onehot), constant(prob_test), from_logits=False)
 -  THRESHOLD_ENTROPY_ATTACK = 'threshold-entropy'
 The four first options require training a shadow model, the two last options don’t. 
 
+Again, as explanations in the library are rather code comments than real documentation, I’d like to summarize them here:
+- In *threshold attacks*, for each given threshold value (usually values between 0.5, such as random guessing, and 1, 100% certainty of membership), the function counts how many training and how many testing samples have membership probabilities larger than this threshold. Furthermore, precision and recall values are computed. Based on these values, an interpretable ROC curve representing how accurate the attacker can predict whether or not a data point was used in the training data can be produced. This idea mainly relies on \[2\], as stated in TensorFlow Privacy. 
+- For *trained attacks*, the attack flow involves training a shadow model as described above. A comment in the library’s code states that currently it is not possible to get membership privacy for all samples as some are used for attacker training. Here, the results display an *attacker advantage* based on the idea in \[3\].
+
+Concerning the interpretability of the results, a library code comment states the following:
+```python
+  # Membership score is some measure of confidence of this attacker that
+  # a particular sample is a member of the training set.
+  #
+  # This is NOT necessarily probability. The nature of this score depends on
+  # the type of attacker. Scores from different attacker types are not directly
+  # comparable, but can be compared in relative terms (e.g. considering order
+  # imposed by this measure).
+  #
+
+  # For a perfect attacker,
+# all training samples will have higher scores than test samples.
+```
+
+Now, that we know what to feed into the attack, we can run it on our model. I decided to use a simple threshold attack and a trained attack based on logistic regression for the example. I, furthermore, decided to do some slicing 
+
+```python
+attack_input = AttackInputData(
+  logits_train = logits_train,
+  logits_test = logits_test,
+  loss_train = loss_train,
+  loss_test = loss_test,
+  labels_train = train_labels,
+  labels_test = test_labels
+)
+
+slicing_spec = SlicingSpec(
+    entire_dataset = True,
+    by_class = True,
+    by_percentiles = False,
+by_classification_correctness = True)
+
+attack_types = [
+    AttackType.THRESHOLD_ATTACK,
+    AttackType.LOGISTIC_REGRESSION
+] 
+
+attacks_result = mia.run_attacks(attack_input=attack_input,
+                                 slicing_spec=slicing_spec,
+                                 attack_types=attack_types)
+```
+
+The `attack_result` object can provide us some thorough insight into the attack results by calling:
+```python
+print(attacks_result.summary(by_slices=True))
+```
+This yields a listing of the maximal successful attacks on each slice in the form of AUC-scores and attacker advantage.
+
+```python
+```
+
+In the following weeks, I am planning to write another blogpost about the papers \[2\] and \[3\] in order to explain in a bit more detail how the results are supposed to be explained. For the time being, you can just accept the results as is and use them to compare between classifiers trained with different parameters and methods.  I strongly encourage you to use my [notebook]() to play around with some parameters (training epochs, batch size etc.) in order to get a feeling how those parameters might influence membership privacy.
+
+
+### Factors Influencing the Risk for Membership Inference Attacks 
+There has been quite some research conducted about factors that encourage membership inference attacks.
+For example \[3\] and \[4\] deal with the question of identifying factors that influence membership inference risks in ML models.
+Those factors are:
+- overfitting,
+- classification problem complexity,
+- in-class standard deviation
+- type of ML model targeted.
+
+
 
 
 ### Further Reading
@@ -192,3 +261,5 @@ The four first options require training a shadow model, the two last options don
 \[2\] Song, Liwei, and Prateek Mittal. "Systematic evaluation of privacy risks of machine learning models." arXiv preprint arXiv:2003.10595 (2020).
 
 \[3\] Yeom, Samuel, Irene Giacomelli, Matt Fredrikson, and Somesh Jha. "Privacy risk in machine learning: Analyzing the connection to overfitting." In 2018 IEEE 31st Computer Security Foundations Symposium (CSF), pp. 268-282. IEEE, 2018.
+
+\[4\] Truex, Stacey, Ling Liu, Mehmet Emre Gursoy, Wenqi Wei, and Lei Yu. "Effects of differential privacy and data skewness on membership inference vulnerability." In 2019 First IEEE International Conference on Trust, Privacy and Security in Intelligent Systems and Applications (TPS-ISA), pp. 82-91. IEEE, 2019.
