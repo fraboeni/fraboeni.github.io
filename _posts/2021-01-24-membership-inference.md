@@ -142,7 +142,7 @@ In my opinion, the library offers so many different functionalities, that for a 
 However, for some information (e.g., what data you must provide, and which one is optional, or what type this data should have), you need to dive deep into the code. Therefore, I tried to sum up for you what I found out.
 
 #### AttackInputData
-* AttackInputData* is used to specify what information $f_{attack}$ will receive. As we have clarified above, $f_{attack}$ is the binary classifier trained to predict, based on a target model $f$’s output on a data point, whether this data point was part of the training data or not. And exactly the output of our model $f$ can be provided to the attack via the `AttackInputData` data structure. You can  specify 
+*AttackInputData* is used to specify what information $f_{attack}$ will receive. As we have clarified above, $f_{attack}$ is the binary classifier trained to predict, based on a target model $f$’s output on a data point, whether this data point was part of the training data or not. And exactly the output of our model $f$ can be provided to the attack via the `AttackInputData` data structure. You can  specify 
 - `train and test loss`
 - `train and test labels` (as integer arrays)
 - `train and test entropy`
@@ -169,6 +169,23 @@ y_test_onehot = to_categorical(test_labels)
 loss_train = cce(constant(y_train_onehot), constant(prob_train), from_logits=False).numpy()
 loss_test = cce(constant(y_test_onehot), constant(prob_test), from_logits=False).numpy()
 ```
+#### SlicingSpec
+*SlicingSpec* offers you a possibility to slice your dataset. This makes sense if you want to find out the success of the membership inference attack over specific data groups or classes. According to the code you have the following options that can be set to True:
+- entire_dataset: one of the slices will be the entire dataset
+- by_class: one slice per class is generated
+- by_percentiles: generates 10 slices for percentiles of the loss - 0-10%, 10-20%, ... 90-100%
+- by_classification_correctness: creates one slice for correctly classified data points, and one for misclassified data points.
+
+#### AttackType
+*AttackType* gives you different options on how your membership inference attack should be conducted. 
+-  LOGISTIC_REGRESSION = 'lr'
+- MULTI_LAYERED_PERCEPTRON = 'mlp'
+-  RANDOM_FOREST = 'rf'
+-  K_NEAREST_NEIGHBORS = 'knn'
+-  THRESHOLD_ATTACK = 'threshold'
+-  THRESHOLD_ENTROPY_ATTACK = 'threshold-entropy'
+The four first options require training a shadow model, the two last options don’t. 
+
 
 
 ### Further Reading
