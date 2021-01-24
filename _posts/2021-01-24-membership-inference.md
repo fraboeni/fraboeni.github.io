@@ -73,7 +73,7 @@ In order to train this meta-classifier $f_{attack}$, $k$ *shadow models* $f_{sha
 Those models are supposed to imitate the behaviour of the original ML model $f$. 
 However, their training data $X’$, i.e. the ground truth $y’$ for the binary classifications, is known to the attacker. 
 
-By using the knowledge about the shadow models’ training data, input output-pairs $ (x’_i, f_{shaddow}^j; y’_i) $ for the meta-classifier can be constructed, 
+By using the knowledge about the shadow models’ training data, input output-pairs $\(x’_i, f_{shaddow}^j; y’_i\)$ for the meta-classifier can be constructed, 
 such that it learns the task of distinguishing between members and non-members based on an ML model’s behavior on them.
 
 <figure style="width:60%;">
@@ -141,13 +141,13 @@ In my opinion, the library offers so many different functionalities, that for a 
 
 However, for some information (e.g., what data you must provide, and which one is optional, or what type this data should have), you need to dive deep into the code. Therefore, I tried to sum up for you what I found out.
 
-#### AttackInputData
-*AttackInputData* is used to specify what information $f_{attack}$ will receive. As we have clarified above, $f_{attack}$ is the binary classifier trained to predict, based on a target model $f$’s output on a data point, whether this data point was part of the training data or not. And exactly the output of our model $f$ can be provided to the attack via the `AttackInputData` data structure. You can  specify 
+**AttackInputData** is used to specify what information $f_{attack}$ will receive. As we have clarified above, $f_{attack}$ is the binary classifier trained to predict, based on a target model $f$’s output on a data point, whether this data point was part of the training data or not. And exactly the output of our model $f$ can be provided to the attack via the `AttackInputData` data structure. You can  specify 
 - `train and test loss`
 - `train and test labels` (as integer arrays)
 - `train and test entropy`
-- `train and test logits` or `train and test probabilities` over all given classes. As the latter ones depend on the former ones, they can only be specified if no logits are provided. Either labels, logits, losses or entropy should be set in order to be able to perform the attack.
+- `train and test logits` or `train and test probabilities` over all given classes. As the latter ones depend on the former ones, they can only be specified if no logits are provided. 
 
+Either labels, logits, losses or entropy should be set in order to be able to perform the attack.
 I have never worked with the entropy option so far, but the other values could potentially be obtained from your trained model with the following code.:
 ```python
 print('Predict on train...')
@@ -169,15 +169,13 @@ y_test_onehot = to_categorical(test_labels)
 loss_train = cce(constant(y_train_onehot), constant(prob_train), from_logits=False).numpy()
 loss_test = cce(constant(y_test_onehot), constant(prob_test), from_logits=False).numpy()
 ```
-#### SlicingSpec
-*SlicingSpec* offers you a possibility to slice your dataset. This makes sense if you want to find out the success of the membership inference attack over specific data groups or classes. According to the code you have the following options that can be set to True:
+**SlicingSpec** offers you a possibility to slice your dataset. This makes sense if you want to find out the success of the membership inference attack over specific data groups or classes. According to the code you have the following options that can be set to True:
 - entire_dataset: one of the slices will be the entire dataset
 - by_class: one slice per class is generated
 - by_percentiles: generates 10 slices for percentiles of the loss - 0-10%, 10-20%, ... 90-100%
 - by_classification_correctness: creates one slice for correctly classified data points, and one for misclassified data points.
 
-#### AttackType
-*AttackType* gives you different options on how your membership inference attack should be conducted. 
+**AttackType** gives you different options on how your membership inference attack should be conducted. 
 -  LOGISTIC_REGRESSION = 'lr'
 - MULTI_LAYERED_PERCEPTRON = 'mlp'
 -  RANDOM_FOREST = 'rf'
@@ -191,4 +189,6 @@ The four first options require training a shadow model, the two last options don
 ### Further Reading
 \[1\] Shokri, Reza, Marco Stronati, Congzheng Song, and Vitaly Shmatikov. "Membership inference attacks against machine learning models." In 2017 IEEE Symposium on Security and Privacy (SP), pp. 3-18. IEEE, 2017.
 
-\[2\] 
+\[2\] Song, Liwei, and Prateek Mittal. "Systematic evaluation of privacy risks of machine learning models." arXiv preprint arXiv:2003.10595 (2020).
+
+\[3\] Yeom, Samuel, Irene Giacomelli, Matt Fredrikson, and Somesh Jha. "Privacy risk in machine learning: Analyzing the connection to overfitting." In 2018 IEEE 31st Computer Security Foundations Symposium (CSF), pp. 268-282. IEEE, 2018.
