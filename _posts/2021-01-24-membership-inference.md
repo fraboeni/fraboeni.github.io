@@ -73,7 +73,7 @@ In order to train this meta-classifier $f_{attack}$, $k$ *shadow models* $f_{sha
 Those models are supposed to imitate the behaviour of the original ML model $f$. 
 However, their training data $X’$, i.e. the ground truth $y’$ for the binary classifications, is known to the attacker. 
 
-By using the knowledge about the shadow models’ training data, input output-pairs \($x’_i, f_{shaddow}^j; y’_i$\) for the meta-classifier can be constructed, 
+By using the knowledge about the shadow models’ training data, input output-pairs \( $x’_i, f_{shaddow}^j; y’_i$ \) for the meta-classifier can be constructed, 
 such that it learns the task of distinguishing between members and non-members based on an ML model’s behavior on them.
 
 <figure style="width:60%;">
@@ -124,8 +124,49 @@ With the three color channels and the details, the dataset is more complex than 
 Yet, we will use a faily simple architecture here that does not achieve amazing results, but is enough for our purpose, namely, having a trained model to attack.
 
 ```python
-Model Architecture.
+def make_simple_model():
+  """ Define a Keras model without much of regularization
+  Such a model is prone to overfitting"""
+  shape = (32, 32, 3)
+  i = Input(shape=shape)
+  x = Conv2D(32, (3, 3), activation='relu')(i)
+  x = MaxPooling2D()(x)
+
+  x = Conv2D(64, (3, 3), activation='relu')(x)
+  x = MaxPooling2D()(x)
+
+  x = Conv2D(64, (3, 3), activation='relu')(x)
+  x = MaxPooling2D()(x)
+
+  x = Flatten()(x)
+  x = Dense(128, activation='relu')(x)
+  # if we don't specify an activation for the last layer, we can have the logits
+  x = Dense(10)(x)
+  model = Model(i, x)
+  return model
   ```
+  
+Based on this architecture, we can build our model.
+```python
+model_10 = make_simple_model()
+# specify parameters
+optimizer = tf.keras.optimizers.Adam()
+loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
+
+# compile the model
+model_10.compile(optimizer=optimizer, loss=loss, metrics=['accuracy'])
+
+history = model_10.fit(train_data, train_labels,
+                       validation_data=(test_data, test_labels),
+                       batch_size=128, 
+                       epochs=10)
+```
+<figure style="width:60%;">
+    <img src="{{ "/files/2021-01-24-membership-inference/pic5-accuracy-of-model1.png" | prepend: base_path }}"
+     alt='accuracy when training CIFAR10 model for 10 epochs'/>
+    <figcaption>When training the model for 10 epochs, we reach an accuracy of around 70%.</figcaption>
+</figure>
+
  
 In order to use TensorFlow Privacy’s membership inference attack, we need to import it with
 ```python
@@ -184,8 +225,8 @@ loss_test = cce(constant(y_test_onehot), constant(prob_test), from_logits=False)
 -  THRESHOLD_ENTROPY_ATTACK = 'threshold-entropy'
 The four first options require training a shadow model, the two last options don’t. 
 
-Again, as explanations in the library are rather code comments than real documentation, I’d like to summarize them here:
-- In *threshold attacks*, for each given threshold value (usually values between 0.5, such as random guessing, and 1, 100% certainty of membership), the function counts how many training and how many testing samples have membership probabilities larger than this threshold. Furthermore, precision and recall values are computed. Based on these values, an interpretable ROC curve representing how accurate the attacker can predict whether or not a data point was used in the training data can be produced. This idea mainly relies on \[2\], as stated in TensorFlow Privacy. 
+Again, as explanations in the library are provided mainly within the code, I’d like to summarize them here:
+- In *threshold attacks*, for a given threshold value that is usually between 0.5,(random guessing), and 1 (100% certainty of membership), the function counts how many training and how many testing samples have membership probabilities larger than this threshold. Furthermore, precision and recall values are computed. Based on these values, an interpretable ROC curve representing how accurate the attacker can predict whether or not a data point was used in the training data can be produced. This idea mainly relies on \[2\], as stated in TensorFlow Privacy. 
 - For *trained attacks*, the attack flow involves training a shadow model as described above. A comment in the library’s code states that currently it is not possible to get membership privacy for all samples as some are used for attacker training. Here, the results display an *attacker advantage* based on the idea in \[3\].
 
 Concerning the interpretability of the results, a library code comment states the following:
@@ -238,9 +279,34 @@ print(attacks_result.summary(by_slices=True))
 This yields a listing of the maximal successful attacks on each slice in the form of AUC-scores and attacker advantage.
 
 ```python
+Best-performing attacks over all slices
+  LOGISTIC_REGRESSION (with 1000 training and 1000 test examples) achieved an AUC of 0.54 on slice CLASS=3
+  LOGISTIC_REGRESSION (with 1000 training and 1000 test examples) achieved an advantage of 0.11 on slice CLASS=3
+
+Best-performing attacks over slice: "Entire dataset"
+  LOGISTIC_REGRESSION (with 10000 training and 10000 test examples) achieved an AUC of 0.53
+  LOGISTIC_REGRESSION (with 10000 training and 10000 test examples) achieved an advantage of 0.06
+
+Best-performing attacks over slice: "CLASS=0"
+  THRESHOLD_ATTACK (with 5000 training and 1000 test examples) achieved an AUC of 0.51
+  LOGISTIC_REGRESSION (with 1000 training and 1000 test examples) achieved an advantage of 0.07
+  
+  ...
 ```
 
-In the following weeks, I am planning to write another blogpost about the papers \[2\] and \[3\] in order to explain in a bit more detail how the results are supposed to be explained. For the time being, you can just accept the results as is and use them to compare between classifiers trained with different parameters and methods.  I strongly encourage you to use my [notebook]() to play around with some parameters (training epochs, batch size etc.) in order to get a feeling how those parameters might influence membership privacy.
+Next to the written summary, you can also plot the AUC-ROC curve of the most successful attack
+```python
+import tensorflow_privacy.privacy.membership_inference_attack.plotting as plotting
+plotting.plot_roc_curve(attacks_result.get_result_with_max_auc().roc_curve)
+```
+<figure style="width:60%;">
+    <img src="{{ "/files/2021-01-24-membership-inference/pic7-rocauc-curve-model10.png" | prepend: base_path }}"
+     alt='AUC-ROC curve of the membership inference attack success'/>
+    <figcaption>AUC-ROC curve for the most successful membership privacy attack.</figcaption>
+</figure>
+
+
+In the following weeks, I am planning to write another blogpost about the papers \[2\] and \[3\] in order to explain in a bit more detail how the results can be interpreted. For the time being, you can just accept the results as is and use them to compare between classifiers trained with different parameters and methods.  I strongly encourage you to use my [notebook]() to play around with some parameters (training epochs, batch size etc.) in order to get a feeling how those parameters might influence membership privacy.
 
 
 ### Factors Influencing the Risk for Membership Inference Attacks 
