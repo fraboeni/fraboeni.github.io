@@ -33,7 +33,7 @@ All right, let’s get started.
 The privacy risk I am going to present today is called “membership inference”. 
 We’ll first have a look on what membership inference actually means and how it can be used in order to violate individual privacy. 
 Afterwards, we’ll go into some more details exploring how those attacks work. 
-Then, we’ll use the TensorFlow Privacy library in order to conduct an attack on an ML classifier ourselves. 
+Then, we’ll use the [TensorFlow Privacy library](https://github.com/tensorflow/privacy) in order to conduct an attack on an ML classifier ourselves. 
 You will see that this powerful tool makes it pretty easy.
 I will also briefly mention some factors that increase a model’s vulnerability against membership inference attacks and protective measures.
 
