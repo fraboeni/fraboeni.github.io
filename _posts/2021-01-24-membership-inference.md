@@ -32,7 +32,7 @@ For today’s post I am going to assume that you have some understanding of the 
 All right, let’s get started. 
 The privacy risk I am going to present today is called “membership inference”. 
 We’ll first have a look on what membership inference actually means and how it can be used in order to violate individual privacy. 
-Afterwards, we’ll go into some more details exploring how those attacks work on a low level. 
+Afterwards, we’ll go into some more details exploring how those attacks work. 
 Then, we’ll use the TensorFlow Privacy library in order to conduct an attack on an ML classifier ourselves. 
 You will see that this powerful tool makes it pretty easy.
 I will also briefly mention some factors that increase a model’s vulnerability against membership inference attacks and protective measures.
@@ -88,21 +88,19 @@ or based on data synthetization with help of $f$ or statistics over $X$.
 Additionally, they showed that a membership inference attack can even be trained with only black-box access to the target model and without any prior knowledge about its training data.
 
 ## Implementing Membership Inference Attacks 
-There are several tools for implementing membership inference attacks. The two that I am most familiar with are the [IBM-ART framework](https://github.com/Trusted-AI/adversarial-robustness-toolbox) that I used in [my last blogpost](/posts/2020/12/model-inversion/) in order to implement model inversion attacks, and [TensorFlow Privacy’s Memberhip Inference]( https://github.com/tensorflow/privacy/tree/master/tensorflow_privacy/privacy/membership_inference_attack). For my purposes (mainly trying to compare privacy between different models), so far, the TensorFlow version has proven more useful, since the attacks were more successful. 
-Therefore, we are going to take a look at an implementation of membership inference attacks with TensorFlow Privacy in the following. 
-Similar as last time, I uploaded a notebook for you, containing my entire code. [code]().
+There are several tools for implementing membership inference attacks. The two that I am most familiar with are the [IBM-ART framework](https://github.com/Trusted-AI/adversarial-robustness-toolbox) that I used in [my last blogpost](/posts/2020/12/model-inversion/) in order to implement model inversion attacks, and [TensorFlow Privacy’s Membership Inference]( https://github.com/tensorflow/privacy/tree/master/tensorflow_privacy/privacy/membership_inference_attack). For my purposes (mainly trying to compare privacy between different models), so far, the TensorFlow version has proven more useful, since the attacks were more successful. 
+Therefore, in the following, we are going to take a look at the implementation of membership inference attacks with TensorFlow Privacy . 
+Similar to last time, I've uploaded a [notebook]() for you, containing my entire code.
 
 ### TensorFlow Privacy’s Membership Inference-Framework
-In my opinion, the usability of TensorFlow Privacy’s Membership Inference attack has had its ups and downs in the last months. For a long time, TensorFlow Privacy used to work with TensorFlow version 1 only. For me, this included a lot of hassle by continuously changing between virtual environments with TensorFlow version 1 and 2 in order to take the maximum capabilities out of both. 
+In my opinion, the usability of TensorFlow Privacy’s Membership Inference attack has had its ups and downs in the last months. For a long time, TensorFlow Privacy used to work with TensorFlow version 1 only. For me, this included a lot of hassle by continuously changing between virtual environments with TensorFlow version 1 and 2 in order to take the maximum capabilities out of both versions. 
 Then, by the end of 2020, TensorFlow Privacy was successfully updated to work with Tensorflow 2 and I was all excited about it. 
 However, in my opinion, there are still some ongoing problems if you want to include the membership inference attacks into longer-lasting projects: For example, if I am not mistaken, the interface of TensorFlow Privacy’s membership inference has been updated and changed completely WITHOUT a version number increase so far (stayed 0.5.1 all along). So, don’t be confused if your package 0.5.1 has entirely different code than the one that you find in the online repo, or if you can’t get your old code to run. 
-In order to always stay up to date, the helpful community suggested to use the following 
+In order to always stay up to date, the helpful community suggested using the following 
 ```
 pip install -U git+https://github.com/tensorflow/privacy
 ```
 and it works.
-
-Apart from these issues, I find TensorFlow Privacy to be a really useful tool for many purposes, one of it being the implementations of membership inference attacks.
 
 ### Implementing a Membership Inference Attack with TensorFlow Privacy
 When evaluating membership inference risks, I prefer to work with the CIFAR10 dataset instead of MNIST because, according to my experience, the membership privacy risk of simple models trained with MNIST is usually already quite low. 
@@ -120,8 +118,9 @@ It consists of 60000 32x32 colour images in 10 classes, with 6000 images per cla
     <figcaption>Example images of the CIFAR10 dataset.</figcaption>
 </figure>
 
-With the three color channels and the details, the dataset is more complex than MNIST. 
-Yet, we will use a faily simple architecture here that does not achieve amazing results, but is enough for our purpose, namely, having a trained model to attack.
+With its three color channels and details, this dataset is more complex than MNIST. 
+In order to see some privacy risks, we will use a faily simple architecture here without a lot of regularization (which might mitigate membership privacy risks, see below).
+
 
 ```python
 def make_simple_model():
@@ -168,7 +167,7 @@ history = model_10.fit(train_data, train_labels,
 </figure>
 
  
-In order to use TensorFlow Privacy’s membership inference attack, we need to import it with
+In order to use TensorFlow Privacy’s membership inference attack, we need to import:
 ```python
 from tensorflow_privacy.privacy.membership_inference_attack import membership_inference_attack as mia
 from tensorflow_privacy.privacy.membership_inference_attack.data_structures import AttackInputData
@@ -176,12 +175,13 @@ from tensorflow_privacy.privacy.membership_inference_attack.data_structures impo
 from tensorflow_privacy.privacy.membership_inference_attack.data_structures import AttackType
 ```
 
-The first line imports the membership inference attack itself. The following lines import data structures needed in the course of conducting the attack.
+The first line imports the membership inference attack itself. 
+The following lines import data structures required in the course of the attack.
 
 The library offers so many different functionalities that - for non-experts - it might be a little difficult to identify the right setting even though the [README]( https://github.com/tensorflow/privacy/tree/master/tensorflow_privacy/privacy/membership_inference_attack) is very helpful.
 
 However, to find some useful information (e.g., what data you must provide, and which one is optional, or what type this data should have), one needs to dive deep into the code. 
-Therefore, I will give you a summation of my findings here.
+Therefore, I will give you a summary of my findings here.
 
 **AttackInputData** is used to specify what information $f_{attack}$ will receive. As we have clarified above, $f_{attack}$ is the binary classifier trained to predict, based on a target model $f$’s output given a data point, whether this data point was part of the training data or not. And exactly this output of our model $f$ can be provided through the `AttackInputData` data structure. You can  specify 
 - `train and test loss`
@@ -189,7 +189,7 @@ Therefore, I will give you a summation of my findings here.
 - `train and test entropy`
 - `train and test logits` or `train and test probabilities` over all given classes. As the latter depend on the former, they can only be specified if no logits are provided. 
 
-Either labels, logits, losses or entropy should be set in order to be able to perform the attack.
+Either labels, logits, losses or entropy should be set to be able to perform the attack.
 I have never worked with the entropy option so far, but the other values could potentially be obtained from your trained model with the following code.:
 ```python
 print('Predict on train...')
@@ -228,7 +228,8 @@ loss_test = cce(constant(y_test_onehot), constant(prob_test), from_logits=False)
 The four first options require training a shadow model, the two last options don’t. 
 
 Again, as explanations in the library are provided mainly within the code, I’d like to summarize them here:
-- In *threshold attacks*, for a given threshold value that is usually between 0.5,(random guessing), and 1 (100% certainty of membership), the function counts how many training and how many testing samples have membership probabilities larger than this threshold. Furthermore, precision and recall values are computed. Based on these values, an interpretable ROC curve can be produced representing how accurate the attacker can predict whether or not a data point was used in the training data. This idea mainly relies on \[2\], as stated in TensorFlow Privacy. 
+- In *threshold attacks*, for a given threshold value, the function counts how many training and how many testing samples have membership probabilities larger than this threshold. The value is usually between 0.5,(random guessing between the two options member and non-member), and 1 (100% certainty of membership)
+Furthermore, precision and recall values are computed. Based on these values, an interpretable ROC curve can be produced representing how accurate the attacker can predict whether or not a data point was used in the training data. This idea mainly relies on \[2\], as stated in TensorFlow Privacy. 
 - For *trained attacks*, the attack flow involves training a shadow model as described above. A comment in the library’s code states that it is currently not possible to calculate membership privacy for all samples as some are used for training the attacker model. Here, the results display an *attacker advantage* based on the idea in \[3\].
 
 Concerning the interpretability of the results, a library code comment states the following:
@@ -308,7 +309,7 @@ plotting.plot_roc_curve(attacks_result.get_result_with_max_auc().roc_curve)
 </figure>
 
 
-In the following weeks, I am planning to write another blogpost about the papers \[2\] and \[3\] in order to explain in more detail how the results can be interpreted. For the time being, you can just accept the results as is and use them to compare between classifiers trained with different parameters and methods.  I strongly encourage you to use my [notebook]() and play around with some parameters (training epochs, batch size etc.) in order to get a feeling how those parameters might influence membership privacy.
+In the following weeks, I am planning to write another blogpost about the papers \[2\] and \[3\] explaining in more detail how the results can be interpreted. For the time being, you can just take the results as they are and use them to compare between classifiers trained with different parameters and methods.  I strongly encourage you to use my [notebook]() and play around with some parameters (training epochs, batch size etc.) in order to get a feeling how those parameters might influence membership privacy.
 
 
 ### Factors Influencing the Risk of Membership Inference Attacks and Protective Measures
