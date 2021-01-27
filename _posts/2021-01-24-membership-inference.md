@@ -296,15 +296,15 @@ This is a phenomenon that can be observe often in membership inference attacks, 
 It results from the fact that the model classifies training instances quite well, whereas it has issues on previously unseen data.
 Therefore, the attacker model might learn the simple connection: "if an instance is misclassified, it is likely that the model has not seen it before", hence, the data was not used for training.
 
-In addition to a written summary, you can also plot the AUC-ROC curve of the most successful attack
+In addition to a written summary, you can also plot the ROC curve of the most successful attack
 ```python
 import tensorflow_privacy.privacy.membership_inference_attack.plotting as plotting
 plotting.plot_roc_curve(attacks_result.get_result_with_max_auc().roc_curve)
 ```
 <figure style="width:60%;">
     <img src="{{ "/files/2021-01-24-membership-inference/pic7-rocauc-curve-model10.png" | prepend: base_path }}"
-     alt='AUC-ROC curve of the membership inference attack success'/>
-    <figcaption>AUC-ROC curve for the most successful membership privacy attack.</figcaption>
+     alt='ROC curve of the membership inference attack success'/>
+    <figcaption>ROC curve for the most successful membership privacy attack.</figcaption>
 </figure>
 
 
