@@ -90,7 +90,7 @@ Additionally, they showed that a membership inference attack can even be trained
 ## Implementing Membership Inference Attacks 
 There are several tools for implementing membership inference attacks. The two that I am most familiar with are the [IBM-ART framework](https://github.com/Trusted-AI/adversarial-robustness-toolbox) that I used in [my last blogpost](/posts/2020/12/model-inversion/) in order to implement model inversion attacks, and [TensorFlow Privacy’s Membership Inference]( https://github.com/tensorflow/privacy/tree/master/tensorflow_privacy/privacy/membership_inference_attack). For my purposes (mainly trying to compare privacy between different models), so far, the TensorFlow version has proven more useful, since the attacks were more successful. 
 Therefore, in the following, we are going to take a look at the implementation of membership inference attacks with TensorFlow Privacy . 
-Similar to last time, I've uploaded a [notebook]() for you, containing my entire code.
+Similar to last time, I've uploaded a [notebook]('/files/2021-01-24-membership-inference/tensorflow_privacy_membership_inference_attacks.ipynb') for you, containing my entire code.
 
 ### TensorFlow Privacy’s Membership Inference-Framework
 In my opinion, the usability of TensorFlow Privacy’s Membership Inference attack has had its ups and downs in the last months. For a long time, TensorFlow Privacy used to work with TensorFlow version 1 only. For me, this included a lot of hassle by continuously changing between virtual environments with TensorFlow version 1 and 2 in order to take the maximum capabilities out of both versions. 
@@ -139,7 +139,6 @@ def make_simple_model():
 
   x = Flatten()(x)
   x = Dense(128, activation='relu')(x)
-  # if we don't specify an activation for the last layer, we can have the logits
   x = Dense(10)(x)
   model = Model(i, x)
   return model
@@ -147,23 +146,23 @@ def make_simple_model():
   
 Based on this architecture, we can build our model.
 ```python
-model_10 = make_simple_model()
+model = make_simple_model()
 # specify parameters
 optimizer = tf.keras.optimizers.Adam()
 loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
 
 # compile the model
-model_10.compile(optimizer=optimizer, loss=loss, metrics=['accuracy'])
+model.compile(optimizer=optimizer, loss=loss, metrics=['accuracy'])
 
-history = model_10.fit(train_data, train_labels,
+history = model.fit(train_data, train_labels,
                        validation_data=(test_data, test_labels),
                        batch_size=128, 
                        epochs=10)
 ```
 <figure style="width:60%;">
     <img src="{{ "/files/2021-01-24-membership-inference/pic5-accuracy-of-model1.png" | prepend: base_path }}"
-     alt='accuracy when training CIFAR10 model for 10 epochs'/>
-    <figcaption>When training the model for 10 epochs, we reach an accuracy of around 70%.</figcaption>
+     alt='accuracy when training CIFAR10 model for 30 epochs'/>
+    <figcaption>When training the model for 30 epochs, we reach a training accuracy of around 85% and a validation accuracy of around 70%. Hence, we are overfitting the training data.</figcaption>
 </figure>
 
  
@@ -283,19 +282,19 @@ This yields a listing of the maximal successful attacks on each slice in the for
 
 ```python
 Best-performing attacks over all slices
-  LOGISTIC_REGRESSION (with 1000 training and 1000 test examples) achieved an AUC of 0.54 on slice CLASS=3
-  LOGISTIC_REGRESSION (with 1000 training and 1000 test examples) achieved an advantage of 0.11 on slice CLASS=3
+  LOGISTIC_REGRESSION (with 2889 training and 2889 test examples) achieved an AUC of 0.69 on slice CORRECTLY_CLASSIFIED=False
+  LOGISTIC_REGRESSION (with 2889 training and 2889 test examples) achieved an advantage of 0.31 on slice CORRECTLY_CLASSIFIED=False
 
 Best-performing attacks over slice: "Entire dataset"
-  LOGISTIC_REGRESSION (with 10000 training and 10000 test examples) achieved an AUC of 0.53
-  LOGISTIC_REGRESSION (with 10000 training and 10000 test examples) achieved an advantage of 0.06
-
-Best-performing attacks over slice: "CLASS=0"
-  THRESHOLD_ATTACK (with 5000 training and 1000 test examples) achieved an AUC of 0.51
-  LOGISTIC_REGRESSION (with 1000 training and 1000 test examples) achieved an advantage of 0.07
+  LOGISTIC_REGRESSION (with 10000 training and 10000 test examples) achieved an AUC of 0.59
+  LOGISTIC_REGRESSION (with 10000 training and 10000 test examples) achieved an advantage of 0.16
   
   ...
 ```
+What is interesting to observe is that the highest advantage is achieved on mis-classified instances. 
+This is a phenomenon that can be observe often in membership inference attacks, especially when overfitting the training data as much as we do with our simple model.
+It results from the fact that the model classifies training instances quite well, whereas it has issues on previously unseen data.
+Therefore, the attacker model might learn the simple connection: "if an instance is misclassified, it is likely that the model has not seen it before", hence, the data was not used for training.
 
 In addition to a written summary, you can also plot the AUC-ROC curve of the most successful attack
 ```python
@@ -309,7 +308,7 @@ plotting.plot_roc_curve(attacks_result.get_result_with_max_auc().roc_curve)
 </figure>
 
 
-In the following weeks, I am planning to write another blogpost about the papers \[2\] and \[3\] explaining in more detail how the results can be interpreted. For the time being, you can just take the results as they are and use them to compare between classifiers trained with different parameters and methods.  I strongly encourage you to use my [notebook]() and play around with some parameters (training epochs, batch size etc.) in order to get a feeling how those parameters might influence membership privacy.
+In the following weeks, I am planning to write another blogpost about the papers \[2\] and \[3\] explaining in more detail how the results can be interpreted. For the time being, you can just take the results as they are and use them to compare between classifiers trained with different parameters and methods.  I strongly encourage you to use my [notebook]('/files/2021-01-24-membership-inference/tensorflow_privacy_membership_inference_attacks.ipynb') and play around with some parameters (training epochs, batch size, model architecture etc.) in order to get a feeling how those parameters might influence membership privacy. You might also want to rebuild the entire example for another dataset, such as MNIST, in order to compare magnitudes of the attack results.
 
 
 ### Factors Influencing the Risk of Membership Inference Attacks and Protective Measures
