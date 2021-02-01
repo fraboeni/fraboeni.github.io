@@ -73,7 +73,7 @@ In order to train this meta-classifier $f_{attack}$, $k$ *shadow models* $f_{sha
 Those models are supposed to imitate the behaviour of the original ML model $f$. 
 However, their training data $X’$, i.e. the ground truth $y’$ for the binary classifications, is known to the attacker. 
 
-By using the knowledge about the shadow models’ training data, input output-pairs $x_i$, $f_{shaddow}^j$ $y_i$  for the meta-classifier can be constructed, 
+By using the knowledge about the shadow models’ training data, input output-pairs $x_i'$, $f_{shaddow}^j$; $y_i'$  for the meta-classifier can be constructed, 
 such that it learns the task of distinguishing between members and non-members based on an ML model’s behavior on them.
 
 <figure style="width:60%;">
