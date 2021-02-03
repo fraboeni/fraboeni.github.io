@@ -14,6 +14,6 @@ My research interest lies at the intersection of *Machine Learning* (ML) and *Da
 Therefore, protecting privacy in ML models is a crucial task. I’m currently mainly researching in the area of *Differential Privacy*, a mathematical framework that provides formal privacy guarantees. Furthermore, my interest lies in the quantification of privacy loss and in the “translation” between a formal value of a privacy guarantees and real-world implications.
 
 
-If you are interested in the activities of the *PrivML* research group I am building up, check out the tab [Research Group](https://fraboeni.github.io/research_group/). 
+If you are interested in the activities of the *PrivML* research group I am coordinating, check out the tab [Research Group](https://fraboeni.github.io/research_group/). 
 
-Also, we are currently *hiring*. If you are looking for a *full-time PhD position* in the area of Differential Privacy and Machine Learning, please get in touch with me.
+Also, we are currently *hiring*. If you are looking for a *part-time student position*, or a *full-time PhD position* in the area of Differential Privacy and Machine Learning, please get in touch with me. 
