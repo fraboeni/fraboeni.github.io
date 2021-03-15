@@ -1,6 +1,6 @@
 ---
 title: "Differential Privacy for Privacy-Preserving Data Analyses"
-date: 2021-03-13
+date: 2021-03-15
 excerpt: "In this blogpost I introduce the concept of differential privacy and show you how it can be applied to perform privacy-preserving data analysis."
 permalink: /posts/2021/03/differential-privacy/
 image: 2021-03-15-differential-privacy.png
