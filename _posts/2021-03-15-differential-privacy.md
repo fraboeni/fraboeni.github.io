@@ -42,7 +42,7 @@ Yet, already this simple analysis is not as harmless as it seems when it comes t
 > When you calculate the percentage of diabetes patients on both datasets now, you will observe the value 0.0 on $D_1$ and 0.01 on $D_2$. 
 
 
-This difference between the results over the two datasets allows you to learn that individual $x$ has diabetes. Once somebody knows the original dataset and the new one, she can reliably the health status of the added or exchanged individual. Hence, your analysis method cannot be considered privacy-preserving. 
+This difference between the results over the two datasets allows you to learn that individual $x$ has diabetes. Once somebody knows the original dataset and the new one, she can reliably the health status of the added or exchanged individual. Hence, your analysis method cannot be considered privacy-preserving. If you want to read a more thorough explanation of this intuition and notation, you could check out Chapter 3 in my [Master Thesis](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/2019_Boenisch_MSc.pdf).
 
 This is where DP comes into play. It addresses the goal of learning nothing about an individual while learning useful information about a whole population or dataset. Loosely formulated, DP expresses the following: 
 
@@ -99,6 +99,4 @@ The constant $\delta$ can be interpreted as the amount of times that the noisy a
 Now that you know about the concept of DP, you will be ready for its application in the context of ML that I am going to present next week. If you have questions, comments or remarks, feel free to reach out to me.
 
 ### Further Reading
-\[1\] 
-
-\[2\] 
+\[1\] Dwork, Cynthia, and Aaron Roth. "The algorithmic foundations of differential privacy." Foundations and Trends in Theoretical Computer Science 9, no. 3-4 (2014): 211-407.
