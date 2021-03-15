@@ -21,7 +21,7 @@ tags:
 
 
 
-Calculating summary statistics, such as a **count** of data points, a **sum**, or an **average** of values within a dataset 
+Calculating summary statistics, such as a *count* of data points, a *sum*, or an *average* of values within a dataset 
 cannot be too bad from a privacy perspective, right? 
 These statistics are calculated over a whole dataset at the same time and not on a specific individual,
 so what could go wrong?
@@ -60,7 +60,7 @@ Obviously, the average calculation from the previous example does not meet this 
 
 This suggests that deterministic analysis methods (i.e., methods, that on the same data always yield the same results) cannot achieve DP. 
 Instead, what we need to do to protect the individual’s privacy, is to add a controlled amount of probabilistic noise to the results of our analysis. That is, we need a probabilistic analysis. This noise, which can be drawn from a mathematical distribution, 
-such as the (Laplace distribution)[ https://en.wikipedia.org/wiki/Laplace_distribution], can dissimulate the difference between the results on both datasets. 
+such as the [Laplace distribution](https://en.wikipedia.org/wiki/Laplace_distribution), can dissimulate the difference between the results on both datasets. 
 
 
 <figure style="width:60%;">
@@ -81,11 +81,16 @@ This means that the distribution of results on $D_1$ and $D_2$ get and learning 
 
 ## Definition
 This intuition leads to the following definition of DP:
-A randomized algorithm $\mathcal{K}$ with domain $\mathbb{N}^{|\mathcal{X}|}$ gives $\epsilon$-DP, if for all neighboring databases $D_1, D_2 \in \mathbb{N}^{|\mathcal{X, and all $S \subseteq \Ima(\mathcal{K})$
+
+A randomized algorithm $\mathcal{K}$ with domain $\mathbb{N}^{|\mathcal{X}|}$ gives $\epsilon$-DP, if for all neighboring databases $D_1, D_2 \in \mathbb{N}^{|\mathcal{X}|$ and all $S \subseteq \Ima(\mathcal{K})$
+
 $\Pr[\mathcal{K}(D_1)\in S] \leq e^\epsilon \cdot \Pr[\mathcal{K}(D_2)\in S] $
 To understand the definition, let’s look into its different parts. The randomized algorithm in our example would be the noisy average function. Neighboring data bases refer to databases that only differ in one data point, in our example in $x$.
-The definition states that the probability to obtain any specific analysis results on $D_1$ should be roughly the same as obtaining that same result on $D_2$. The **roughly the same** is expressed by the factor $e^\epsilon$. Alternative formulations refer to $1+\epsilon$, which is a bit more intuitive as it explicitly states that both analysis results should be similar within a factor close to one. However, $e^\epsilon$ has nicer mathematical properties when calculating, for example, with the Laplace distribution.
+
+The definition states that the probability to obtain any specific analysis results on $D_1$ should be roughly the same as obtaining that same result on $D_2$. The *roughly the same* is expressed by the factor $e^\epsilon$. Alternative formulations refer to $1+\epsilon$, which is a bit more intuitive as it explicitly states that both analysis results should be similar within a factor close to one. However, $e^\epsilon$ has nicer mathematical properties when calculating, for example, with the Laplace distribution.
+
 There also exists a relaxation for $\epsilon$-DP, called $(\epsilon, \delta)$-DP. It is similar to the equation above, but includes a small constant $\delta$ into the formula.
+
 $\Pr[\mathcal{K}(D_1)\in S] \leq e^\epsilon \cdot \Pr[\mathcal{K}(D_2)\in S]  + \delta$
 
 The constant $\delta$ can be interpreted as the amount of times that the noisy algorithm is allowed to violate the inequality between the probabilities. Literature usually suggests choosing delta as 1 divided by the number of data samples that you are working with.
