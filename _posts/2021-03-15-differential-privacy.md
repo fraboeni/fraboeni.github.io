@@ -82,9 +82,10 @@ This means that the distribution of results on $D_1$ and $D_2$ get and learning 
 ## Definition
 This intuition leads to the following definition of DP:
 
-A randomized algorithm $\mathcal{K}$ with domain $\mathbb{N}^{|\mathcal{X}|}$ gives $\epsilon$-DP, if for all neighboring databases $D_1, D_2 \in \mathbb{N}^{|\mathcal{X}|$ and all $S \subseteq \Ima(\mathcal{K})$
+A randomized algorithm $\mathcal{K}$ 
 
 $\Pr[\mathcal{K}(D_1)\in S] \leq e^\epsilon \cdot \Pr[\mathcal{K}(D_2)\in S] $
+
 To understand the definition, let’s look into its different parts. The randomized algorithm in our example would be the noisy average function. Neighboring data bases refer to databases that only differ in one data point, in our example in $x$.
 
 The definition states that the probability to obtain any specific analysis results on $D_1$ should be roughly the same as obtaining that same result on $D_2$. The *roughly the same* is expressed by the factor $e^\epsilon$. Alternative formulations refer to $1+\epsilon$, which is a bit more intuitive as it explicitly states that both analysis results should be similar within a factor close to one. However, $e^\epsilon$ has nicer mathematical properties when calculating, for example, with the Laplace distribution.
