@@ -82,9 +82,9 @@ This means that the distribution of results on $D_1$ and $D_2$ get and learning 
 ## Definition
 This intuition leads to the following definition of DP:
 
-A randomized algorithm $\mathcal{K}$ with domain $\mathbb{N}^{\|\mathcal{X}\|}$ gives $\epsilon$-DP, if for all neighboring databases $D_1, D_2 \in \mathbb{N}^{\|\mathcal{X}\|$ and all $S \subseteq \Ima(\mathcal{K})$
+A randomized algorithm $\mathcal{K}$ with domain $\mathbb{N}^{\|\mathcal{X}\|} $ gives $\epsilon$-DP, if for all neighboring databases $D_1, D_2 \in \mathbb{N}^{\|\mathcal{X}\| $ and all $S \subseteq \Ima(\mathcal{K})$
 
-Definition 1: $\Pr[\mathcal{K}(D_1)\in S] \leq e^\epsilon \cdot \Pr[\mathcal{K}(D_2)\in S] $
+**Definition 1**: $\Pr[\mathcal{K}(D_1)\in S] \leq e^\epsilon \cdot \Pr[\mathcal{K}(D_2)\in S] $
 
 To understand the definition, let’s look into its different parts. The randomized algorithm in our example would be the noisy average function. Neighboring data bases refer to databases that only differ in one data point, in our example in $x$.
 
@@ -92,7 +92,7 @@ The definition states that the probability to obtain any specific analysis resul
 
 There also exists a relaxation for $\epsilon$-DP, called $(\epsilon, \delta)$-DP. It is similar to the equation above, but includes a small constant $\delta$ into the formula.
 
-Definition 2: $\Pr[\mathcal{K}(D_1)\in S] \leq e^\epsilon \cdot \Pr[\mathcal{K}(D_2)\in S]  + \delta$
+**Definition 2**: $\Pr[\mathcal{K}(D_1)\in S] \leq e^\epsilon \cdot \Pr[\mathcal{K}(D_2)\in S]  + \delta$
 
 The constant $\delta$ can be interpreted as the amount of times that the noisy algorithm is allowed to violate the inequality between the probabilities. Literature usually suggests choosing delta as 1 divided by the number of data samples that you are working with.
 
