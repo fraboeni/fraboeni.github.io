@@ -1,5 +1,5 @@
 ---
-title: "Differential Privacy for Privacy-Preserving Data Analysis"
+title: "Differential Privacy for Privacy-Preserving Data Analyses"
 date: 2021-03-13
 excerpt: "In this blogpost I introduce the concept of differential privacy and show you how it can be applied to perform privacy-preserving data analysis."
 permalink: /posts/2021/03/differential-privacy/
@@ -82,7 +82,7 @@ This means that the distribution of results on $D_1$ and $D_2$ get and learning 
 ## Definition
 This intuition leads to the following definition of DP:
 
-A randomized algorithm $\mathcal{K}$ with domain $\mathbb{N}^{|\mathcal{X}|}$ 
+A randomized algorithm $\mathcal{K}$ with domain $\mathbb{N}^{\|\mathcal{X}\|}$ 
 
 $\Pr[\mathcal{K}(D_1)\in S] \leq e^\epsilon \cdot \Pr[\mathcal{K}(D_2)\in S] $
 
