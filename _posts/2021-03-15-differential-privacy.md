@@ -3,10 +3,10 @@ title: "Differential Privacy for Privacy-Preserving Data Analyses"
 date: 2021-03-13
 excerpt: "In this blogpost I introduce the concept of differential privacy and show you how it can be applied to perform privacy-preserving data analysis."
 permalink: /posts/2021/03/differential-privacy/
-image: 2021-01-24-membership-inference.png
+image: 2021-03-15-differential-privacy.png
 canonical_url: 'https://blog.franziska-boenisch.de'
 header:
-  teaser: 2021-01-24-membership-inference.png
+  teaser: 2021-03-15-differential-privacy.png
 tags:
   - differential privacy
   - privacy
