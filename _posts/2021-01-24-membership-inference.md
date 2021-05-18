@@ -90,7 +90,7 @@ Additionally, they showed that a membership inference attack can even be trained
 ## Implementing Membership Inference Attacks 
 There are several tools for implementing membership inference attacks. The two that I am most familiar with are the [IBM-ART framework](https://github.com/Trusted-AI/adversarial-robustness-toolbox) that I used in [my last blogpost](/posts/2020/12/model-inversion/) in order to implement model inversion attacks, and [TensorFlow Privacy’s Membership Inference]( https://github.com/tensorflow/privacy/tree/master/tensorflow_privacy/privacy/membership_inference_attack). For my purposes (mainly trying to compare privacy between different models), so far, the TensorFlow version has proven more useful, since the attacks were more successful. 
 Therefore, in the following, we are going to take a look at the implementation of membership inference attacks with TensorFlow Privacy . 
-Similar to last time, I've uploaded a [notebook]('/files/2021-01-24-membership-inference/tensorflow_privacy_membership_inference_attacks.ipynb') for you, containing my entire code.
+Similar to last time, I've uploaded a [notebook](files/2021-01-24-membership-inference/tensorflow_privacy_membership_inference_attacks.ipynb) for you, containing my entire code.
 
 ### TensorFlow Privacy’s Membership Inference-Framework
 In my opinion, the usability of TensorFlow Privacy’s Membership Inference attack has had its ups and downs in the last months. For a long time, TensorFlow Privacy used to work with TensorFlow version 1 only. For me, this included a lot of hassle by continuously changing between virtual environments with TensorFlow version 1 and 2 in order to take the maximum capabilities out of both versions. 
@@ -119,7 +119,7 @@ It consists of 60000 32x32 colour images in 10 classes, with 6000 images per cla
 </figure>
 
 With its three color channels and details, this dataset is more complex than MNIST. 
-In order to see some privacy risks, we will use a faily simple architecture here without a lot of regularization (which might mitigate membership privacy risks, see below).
+In order to see some privacy risks, we will use a fairly simple architecture here without a lot of regularization (which might mitigate membership privacy risks, see below).
 
 
 ```python
