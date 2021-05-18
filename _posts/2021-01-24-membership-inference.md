@@ -308,7 +308,7 @@ plotting.plot_roc_curve(attacks_result.get_result_with_max_auc().roc_curve)
 </figure>
 
 
-In the following weeks, I am planning to write another blogpost about the papers \[2\] and \[3\] explaining in more detail how the results can be interpreted. For the time being, you can just take the results as they are and use them to compare between classifiers trained with different parameters and methods.  I strongly encourage you to use my [notebook]('/files/2021-01-24-membership-inference/tensorflow_privacy_membership_inference_attacks.ipynb') and play around with some parameters (training epochs, batch size, model architecture etc.) in order to get a feeling how those parameters might influence membership privacy. You might also want to rebuild the entire example for another dataset, such as MNIST, in order to compare magnitudes of the attack results.
+In the following weeks, I am planning to write another blogpost about the papers \[2\] and \[3\] explaining in more detail how the results can be interpreted. For the time being, you can just take the results as they are and use them to compare between classifiers trained with different parameters and methods.  I strongly encourage you to use my [notebook](/files/2021-01-24-membership-inference/tensorflow_privacy_membership_inference_attacks.ipynb) and play around with some parameters (training epochs, batch size, model architecture etc.) in order to get a feeling how those parameters might influence membership privacy. You might also want to rebuild the entire example for another dataset, such as MNIST, in order to compare magnitudes of the attack results.
 
 
 ### Factors Influencing the Risk of Membership Inference Attacks and Protective Measures
