@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a research associate at Fraunhofer AISEC (Applied and Integrated Security) and at the same time, I am pursuing a PhD at Freie Universität Berlin.
+Hello and welcome to my website. My name is Franziska Boenisch and I'm a research associate at Fraunhofer AISEC (Applied and Integrated Security). At the same time, I am pursuing a PhD at Freie Universität Berlin.
 
 # Research
 My research interest lies at the intersection of *Machine Learning* (ML) and *Data Privacy*. Research has shown that trained ML models do not necessarily provide privacy for the underlying training datasets, as some attacks allow to restore (aspects of) the training data from the model parameters (e.g. [model inversion attacks](/posts/2020/12/model-inversion/)), or others allow to find out if a specific data point was included in the training dataset or not ([membership inference attacks](/posts/2021/01/membership-inference/)). Both can be harmful for the privacy of the individuals whose data is represented in the training dataset.
@@ -16,4 +16,3 @@ Therefore, protecting privacy in ML models is a crucial task. I’m currently ma
 
 If you are interested in the activities of the *PrivML* research group I am coordinating, check out the tab [Research Group](https://fraboeni.github.io/research_group/). 
 
-Also, we are currently *hiring*. If you are looking for a *part-time student position*, or a *full-time PhD position* in the area of Differential Privacy and Machine Learning, please get in touch with me. 
