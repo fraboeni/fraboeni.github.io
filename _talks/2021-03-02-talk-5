@@ -1,0 +1,18 @@
+---
+title: "Privacy-Preservation in Machine Learning: Threats and Solutions"
+collection: talks
+type: "Meetup Talk"
+permalink: /talks/2021-03-02-talk-5
+venue: "Advanced Machine Learning Study Group (Berlin & Remote)"
+date: 2021-03-02
+location: "Berlin, Germany"
+---
+
+*Abstract:* Neural networks are increasingly being applied in sensitive domains and on private data. 
+For a long time, no thought was given to what this means for the privacy of the data used for their training. 
+Only in recent years has there emerged an awareness that the process of converting training data into a model is not irreversible as previously thought. 
+Since then, several specific attacks against privacy in neural networks have been developed. 
+Of these, we will discuss two specific ones, namely membership inference and model inversion attacks. 
+First, we will focus on how they retrieve potentially sensitive information from trained models. 
+Then, we will look into several factors that influence the success of both attacks. 
+At the end, we will discuss Differential Privacy as a possible protection measure.
