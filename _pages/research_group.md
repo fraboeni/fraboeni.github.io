@@ -23,8 +23,8 @@ centered around privacy-preserving machine learning.
 
 | Student          | Program| Thesis Title | Link |
 | --------- |:---|:---------|
-| M. Krüger    | Bachelor   | Application and Evaluation of Differential Privacy in Health Data Classification Tasks|[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/2020-Krueger-BSc.pdf)|
-| O. Bouanani     | Bachelor   | Neural Network Architectural Choices for Privacy      |[pdf]()|
+| M. Krüger    | Bachelor   | Application and Evaluation of Differential Privacy in Health Data Classification Tasks|[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/Thesis_Maika_Krueger_Corrections.pdf)|
+| O. Bouanani     | Bachelor   | Neural Network Architectural Choices for Privacy      |[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/2021_oussama_bouanani_bsc_thesis.pdf)|
 
 ## Open topics
 
