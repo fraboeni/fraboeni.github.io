@@ -93,6 +93,13 @@ Therefore, in the following, we are going to take a look at the implementation o
 Similar to last time, I've uploaded a [notebook](/files/2021-01-24-membership-inference/tensorflow_privacy_membership_inference_attacks.ipynb) for you, containing my entire code.
 
 ### TensorFlow Privacy’s Membership Inference-Framework
+
+Internally, TensorFlow Privacy's Membership Inference attack differs slightly from the original attack as described by Shokri et al. \[1\].
+Instead of training several shadow models, it relies on the observation by Salem et al. \[5\] that using the original model's predictions on the target points is sufficient to deduce their membership. 
+Thereby, no training of any shadow model that approximates the original model's behavior is required which makes the attack more sufficient.
+In this setting, the original model under attack kind of serves itself as a "shadow model" that approximates its own behavior perfectly.
+
+
 In my opinion, the usability of TensorFlow Privacy’s Membership Inference attack has had its ups and downs in the last months. For a long time, TensorFlow Privacy used to work with TensorFlow version 1 only. For me, this included a lot of hassle by continuously changing between virtual environments with TensorFlow version 1 and 2 in order to take the maximum capabilities out of both versions. 
 Then, by the end of 2020, TensorFlow Privacy was successfully updated to work with Tensorflow 2 and I was all excited about it. 
 However, in my opinion, there are still some ongoing problems if you want to include the membership inference attacks into longer-lasting projects: For example, if I am not mistaken, the interface of TensorFlow Privacy’s membership inference has been updated and changed completely WITHOUT a version number increase so far (stayed 0.5.1 all along). So, don’t be confused if your package 0.5.1 has entirely different code than the one that you find in the online repo, or if you can’t get your old code to run. 
@@ -337,3 +344,5 @@ I hope that my post was helpful for you, if you have any further questions, rema
 \[3\] Yeom, Samuel, Irene Giacomelli, Matt Fredrikson, and Somesh Jha. "Privacy risk in machine learning: Analyzing the connection to overfitting." In 2018 IEEE 31st Computer Security Foundations Symposium (CSF), pp. 268-282. IEEE, 2018.
 
 \[4\] Truex, Stacey, Ling Liu, Mehmet Emre Gursoy, Wenqi Wei, and Lei Yu. "Effects of differential privacy and data skewness on membership inference vulnerability." In 2019 First IEEE International Conference on Trust, Privacy and Security in Intelligent Systems and Applications (TPS-ISA), pp. 82-91. IEEE, 2019.
+
+\[5\] Salem, Ahmed, Yang Zhang, Mathias Humbert, Pascal Berrang, Mario Fritz, and Michael Backes. "Ml-leaks: Model and data independent membership inference attacks and defenses on machine learning models." arXiv preprint arXiv:1806.01246 (2018).
