@@ -10,6 +10,7 @@ This page provides an overview on my publications.
 
 | Author(s)          | Year| Title and Publication                                                        | Link |
 | --------- |:---|:---------|:---|
+| <ins>Franziska Boenisch</ins>      | 2021 | **Privatsphäre und Maschinelles Lernen.** <br> Datenschutz Datensich 45, 448–452.                        | [here](https://doi.org/10.1007/s11623-021-1469-3)|
 | <ins>Franziska Boenisch</ins>, Philip Sperl, and Konstantin Böttinger        | 2021 | **Gradient Masking and the Underestimated Robustness Threats of Differential Privacy in Deep Learning.** <br> arXiv preprint arXiv:2105.07985                           | [here](https://arxiv.org/pdf/2105.07985.pdf)|
 | <ins>Franziska Boenisch</ins>        | 2020 | **A Survey on Model Watermarking Neural Networks.** <br> arXiv preprint arXiv:2009.12153                           | [here](https://arxiv.org/pdf/2009.12153.pdf)|
 | <ins>Franziska Boenisch</ins>        | 2019 | **Differential Privacy: General Survey and Analysis of Practicabilityin the Context of Machine Learning.**  <br>    Master Thesis. Freie Universität Berlin.                       | [here](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/2019_Boenisch_MSc.pdf)|
