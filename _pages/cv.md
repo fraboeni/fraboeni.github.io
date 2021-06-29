@@ -13,22 +13,22 @@ redirect_from:
 * 09/2019 - current: Researcher
   * Department of Secure Systems Engineering, Fraunhofer AISEC, Germany
   * Duties included: Working in industrial and academic research projects concerning private machine learning and data protection
-  * Supervisor: Prof. Dr. Marian Margraf
+  * Supervisor: [Prof. Dr. Marian Margraf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/members/1_Professor_inn_en/Marian-Margraf/index.html)
   
 * 09/2017 - 01/2019: Research Assistant
   * Dahlem Center for Machine Learning and Robotics, Freie University Berlin, Germany
   * Duties included: Programming tasks in MATLAB and Python, literature research for projects, support writing of scientific papers and funding applications
-  * Supervisor: Prof. Dr. Tim Landgraf
+  * Supervisor: [Prof. Dr. Tim Landgraf](https://www.mi.fu-berlin.de/inf/groups/ag-ki/members/Professoren/Tim_Landgraf.html)
   
 * 08/2016 - 10/2016: Visiting Undergraduate with DAAD RISE scholarship
   * National Chung Cheng University, Chiayi, Taiwan
   * Duties included: Implementing neural networks for food image classification
-  * Supervisor: Prof. Ph.D. Wei-Ta Chu
+  * Supervisor: [Prof. Ph.D. Wei-Ta Chu](https://www.cs.ccu.edu.tw/~wtchu/)
 
 * 01/2016 - 07/2016: Working Student
   * Fraunhofer Institute FOKUS, Berlin, Germany
   * Duties included: Implementing scientific demonstrators for predictive maintenance with Apache Spark and Flink
-  * Supervisor: Prof. Dr. Adrian Paschke
+  * Supervisor: [Prof. Dr. Adrian Paschke](https://www.digital-future.berlin/en/about-us/professors/prof-dr-adrian-paschke/)
 
 ## Education
 
