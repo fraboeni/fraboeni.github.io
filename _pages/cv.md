@@ -10,6 +10,10 @@ redirect_from:
 {% include base_path %}
 
 ## Professional Affiliations
+* 07/2021 - current: Research Intern
+  * Vector Institute, Toronto, Canada
+  * Supervisor: [Prof. Ph.D. Nicolas Papernot](https://www.papernot.fr/)
+
 * 09/2019 - current: Researcher
   * Department of Secure Systems Engineering, Fraunhofer AISEC, Germany
   * Duties included: Working in industrial and academic research projects concerning private machine learning and data protection
