@@ -14,8 +14,7 @@ centered around privacy-preserving machine learning.
 | --------- |:---|:---------|
 | W. Gu            | Bachelor | Differential Private Synthetic Data Generation               |
 | J. Ihring        | Master   | Privacy Quantification Methods      |
-| D. Wang          | Bachelor   | Novel Methods for Neural Network Watermarking     |
-| D. Sosnovchyk    | Bachelor   | Synthetic Data Privacy Evaluation     |
+
 
 ## Past theses
 
@@ -25,6 +24,8 @@ centered around privacy-preserving machine learning.
 | O. Bouanani     | Bachelor   | Neural Network Architectural Choices for Privacy      |[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/2021_oussama_bouanani_bsc_thesis.pdf)|
 | C. Müller        | Master | Personalizing Private Aggregation of Teacher Ensembles                           |[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/2021-Christopher-Muehl-MSc.pdf)|
 | T. Känel         | Bachelor   | Practical Evaluation of Neural Network Watermarking Approaches      |[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/2021-Tim-von-Kaenel.pdf)|
+| D. Wang          | Bachelor   | Evaluating and Adapting Existing Neural Network Watermarking Approaches to Online Learning Scenarios     |[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/2021-Wang-BSc.pdf) |
+| D. Sosnovchyk    | Bachelor   | Evaluating Privacy of Synthetic Data Through Metrics     |[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/2021-Sosnovchyk-BSc.pdf)|
 
 ## Open topics
 
