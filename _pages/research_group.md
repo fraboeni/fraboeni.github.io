@@ -12,7 +12,6 @@ centered around privacy-preserving machine learning.
 
 | Student          | Program| Topic                                                        |
 | --------- |:---|:---------|
-||||
 
 
 ## Past theses
