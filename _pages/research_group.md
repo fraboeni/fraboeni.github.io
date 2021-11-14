@@ -10,8 +10,7 @@ centered around privacy-preserving machine learning.
 
 ## Currently ongoing theses
 
-| Student          | Program| Topic                                                        |
-| --------- |:---|:---------|
+
 
 
 ## Past theses
