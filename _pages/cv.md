@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 ## Professional Affiliations
-* 07/2021 - current: Research Intern
+* 07/2021 - 11/2021: Research Intern
   * Vector Institute, Toronto, Canada
   * Supervisor: [Prof. Ph.D. Nicolas Papernot](https://www.papernot.fr/)
 
