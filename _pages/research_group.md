@@ -10,7 +10,9 @@ centered around privacy-preserving machine learning.
 
 ## Currently ongoing theses
 
-
+| Student          | Program| Thesis Title | 
+| --------- |:---|:---------|
+| A. Meszaros    | Bachelor   | Taxonomy of Privacy Attacks in Machine Learning |
 
 
 ## Past theses
