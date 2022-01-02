@@ -37,6 +37,8 @@ Then, we’ll use the [TensorFlow Privacy library](https://github.com/tensorflow
 You will see that this powerful tool makes it pretty easy.
 I will also briefly mention some factors that increase a model’s vulnerability against membership inference attacks and protective measures.
 
+**This blogpost has been updated in December 2021 for Tensorflow Privacy version 0.7.3.**
+
 ## Part 1: Membership Inference Attacks
 Membership inference attacks were first described by Shokri et al. \[1\] in 2017. 
 Since then, a lot of research has been conducted in order to make these attacks more efficient, 
@@ -88,9 +90,9 @@ or based on data synthetization with help of $f$ or statistics over $X$.
 Additionally, they showed that a membership inference attack can even be trained with only black-box access to the target model and without any prior knowledge about its training data.
 
 ## Implementing Membership Inference Attacks 
-There are several tools for implementing membership inference attacks. The two that I am most familiar with are the [IBM-ART framework](https://github.com/Trusted-AI/adversarial-robustness-toolbox) that I used in [my last blogpost](/posts/2020/12/model-inversion/) in order to implement model inversion attacks, and [TensorFlow Privacy’s Membership Inference]( https://github.com/tensorflow/privacy/tree/master/tensorflow_privacy/privacy/membership_inference_attack). For my purposes (mainly trying to compare privacy between different models), so far, the TensorFlow version has proven more useful, since the attacks were more successful. 
+There are several tools for implementing membership inference attacks. The two that I am most familiar with are the [IBM-ART framework](https://github.com/Trusted-AI/adversarial-robustness-toolbox) that I used in [my last blogpost](/posts/2020/12/model-inversion/) in order to implement model inversion attacks, and [TensorFlow Privacy’s Membership Inference](https://github.com/tensorflow/privacy/tree/master/tensorflow_privacy/privacy/privacy_tests/membership_inference_attack). For my purposes (mainly trying to compare privacy between different models), so far, the TensorFlow version has proven more useful, since the attacks were more successful. 
 Therefore, in the following, we are going to take a look at the implementation of membership inference attacks with TensorFlow Privacy . 
-Similar to last time, I've uploaded a [notebook](/files/2021-01-24-membership-inference/tensorflow_privacy_membership_inference_attacks.ipynb) for you, containing my entire code.
+Similar to last time, I've uploaded a [notebook](/files/2021-01-24-membership-inference/tensorflow_privacy_membership_inference_attacks.ipynb) for you, containing my entire code. The code was updated in December 2021 for Python 3.7, TensorFlow 2.7, and TensorFlow Privacy 0.7.3.
 
 ### TensorFlow Privacy’s Membership Inference-Framework
 
@@ -175,7 +177,7 @@ history = model.fit(train_data, train_labels,
  
 In order to use TensorFlow Privacy’s membership inference attack, we need to import:
 ```python
-from tensorflow_privacy.privacy.membership_inference_attack import membership_inference_attack as mia
+import tensorflow_privacy.privacy.privacy_tests.membership_inference_attack.membership_inference_attack as mia
 from tensorflow_privacy.privacy.membership_inference_attack.data_structures import AttackInputData
 from tensorflow_privacy.privacy.membership_inference_attack.data_structures import SlicingSpec
 from tensorflow_privacy.privacy.membership_inference_attack.data_structures import AttackType
@@ -184,7 +186,7 @@ from tensorflow_privacy.privacy.membership_inference_attack.data_structures impo
 The first line imports the membership inference attack itself. 
 The following lines import data structures required in the course of the attack.
 
-The library offers so many different functionalities that - for non-experts - it might be a little difficult to identify the right setting even though the [README]( https://github.com/tensorflow/privacy/tree/master/tensorflow_privacy/privacy/membership_inference_attack) is very helpful.
+The library offers so many different functionalities that - for non-experts - it might be a little difficult to identify the right setting even though the [README]( https://github.com/tensorflow/privacy/tree/master/tensorflow_privacy/privacy/privacy_tests/membership_inference_attack) is very helpful.
 
 However, to find some useful information (e.g., what data you must provide, and which one is optional, or what type this data should have), one needs to dive deep into the code. 
 Therefore, I will give you a summary of my findings here.
@@ -199,13 +201,13 @@ Either labels, logits, losses or entropy should be set to be able to perform the
 I have never worked with the entropy option so far, but the other values could potentially be obtained from your trained model with the following code.:
 ```python
 print('Predict on train...')
-logits_train = model_10.predict(train_data)
+logits_train = model.predict(train_data)
 print('Predict on test...')
-logits_test = model_10.predict(test_data)
+logits_test = model.predict(test_data)
 
 print('Apply softmax to get probabilities from logits...')
-prob_train = special.softmax(logits_train, axis=1)
-prob_test = special.softmax(logits_test, axis=1)
+prob_train = tf.nn.softmax(logits_train, axis=-1)
+prob_test = tf.nn.softmax(logits_test)
 
 print('Compute losses...')
 cce = tf.keras.backend.categorical_crossentropy
