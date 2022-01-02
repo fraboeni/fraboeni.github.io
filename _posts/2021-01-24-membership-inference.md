@@ -37,7 +37,7 @@ Then, we’ll use the [TensorFlow Privacy library](https://github.com/tensorflow
 You will see that this powerful tool makes it pretty easy.
 I will also briefly mention some factors that increase a model’s vulnerability against membership inference attacks and protective measures.
 
-**This blogpost has been updated in December 2021 for Tensorflow Privacy version 0.7.3.**
+**This blogpost has been updated in December 2021 for TensorFlow Privacy version 0.7.3.**
 
 ## Part 1: Membership Inference Attacks
 Membership inference attacks were first described by Shokri et al. \[1\] in 2017. 
@@ -110,6 +110,8 @@ In order to always stay up to date, the helpful community suggested using the fo
 pip install -U git+https://github.com/tensorflow/privacy
 ```
 and it works.
+
+Update December 2021: Things seem to be getting more and more stable. After a major refactoring in a previous version, the interface in version 0.7.3 (the one that I am referring to in the updated version of this blogpost) has not changed and can be used as described here. 
 
 ### Implementing a Membership Inference Attack with TensorFlow Privacy
 When evaluating membership inference risks, I prefer to work with the CIFAR10 dataset instead of MNIST because, according to my experience, the membership privacy risk of simple models trained with MNIST is usually already quite low. 
