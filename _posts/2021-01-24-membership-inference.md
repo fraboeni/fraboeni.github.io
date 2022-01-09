@@ -180,9 +180,9 @@ history = model.fit(train_data, train_labels,
 In order to use TensorFlow Privacy’s membership inference attack, we need to import:
 ```python
 import tensorflow_privacy.privacy.privacy_tests.membership_inference_attack.membership_inference_attack as mia
-from tensorflow_privacy.privacy.membership_inference_attack.data_structures import AttackInputData
-from tensorflow_privacy.privacy.membership_inference_attack.data_structures import SlicingSpec
-from tensorflow_privacy.privacy.membership_inference_attack.data_structures import AttackType
+from tensorflow_privacy.privacy.privacy_tests.membership_inference_attack.data_structures import AttackInputData
+from tensorflow_privacy.privacy.privacy_tests.membership_inference_attack.data_structures import SlicingSpec
+from tensorflow_privacy.privacy.privacy_tests.membership_inference_attack.data_structures import AttackType
 ```
 
 The first line imports the membership inference attack itself. 
