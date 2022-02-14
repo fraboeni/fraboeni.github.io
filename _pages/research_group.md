@@ -21,7 +21,7 @@ centered around privacy-preserving machine learning.
 | --------- |:---|:---------|
 | M. Krüger    | Bachelor   | Application and Evaluation of Differential Privacy in Health Data Classification Tasks|[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/Thesis_Maika_Krueger_Corrections.pdf)|
 | O. Bouanani     | Bachelor   | Neural Network Architectural Choices for Privacy      |[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/2021_oussama_bouanani_bsc_thesis.pdf)|
-| C. Mühl        | Master | Personalizing Private Aggregation of Teacher Ensembles                           |[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/2021-Christopher-Muehl-MSc.pdf)|
+| C. Mühl        | Master | Personalizing Private Aggregation of Teacher Ensembles                           |[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/Christopher-Muehl-Personalizing-Private-Aggregation-of-Teacher-Ensembles.pdf)|
 | T. Känel         | Bachelor   | Practical Evaluation of Neural Network Watermarking Approaches      |[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/2021-Tim-von-Kaenel.pdf)|
 | D. Wang          | Bachelor   | Evaluating and Adapting Existing Neural Network Watermarking Approaches to Online Learning Scenarios     |[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/2021-Wang-BSc.pdf) |
 | D. Sosnovchyk    | Bachelor   | Evaluating Privacy of Synthetic Data Through Metrics     |[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/2021-Sosnovchyk-BSc.pdf)|
