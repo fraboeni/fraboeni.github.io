@@ -10,6 +10,8 @@ This page provides an overview on my publications.
 
 | Author(s)          | Year| Title and Publication                                                        | Link |
 | --------- |:---|:---------|:---|
+| Tabea Kossen, Manuel Hirzel, Vince Madai, <ins>Franziska Boenisch</ins>,  Anja Hennemuth, Kristian
+Hildebrand, Sebastian Pokutta, Kartikey Sharma, Adam Hilbert, Jan Sobesky, Ivana Galinovich, Ahmed Khalil, Jochen Fiebach, and Dietmar Frey.        | 2022 | **Towards sharing brain images: Differentially private TOF-MRA images with segmentation labels using generative adversarial networks.**     Frontiers in Artificial Intelligence         | [here](https://www.frontiersin.org/articles/10.3389/frai.2022.813842/abstract)|
 | <ins>Franziska Boenisch</ins>, Adam Dziedzic,  Roei Schuster, Ali Shahin Shamsabadi, Ilia Shumailov and Nicolas Papernot        | 2021 | **When the Curious Abandon Honesty: Federated Learning Is Not Private.** <br> arXiv preprint arXiv:2112.02918                           | [here](https://arxiv.org/pdf/2112.02918.pdf)|
 | <ins>Franziska Boenisch</ins>        | 2021 | **A Systematic Review on Model Watermarking for Neural Networks.** <br> Frontiers in Big Data, 4(96).                          | [here](https://www.frontiersin.org/articles/10.3389/fdata.2021.729663/full)|
 | <ins>Franziska Boenisch</ins>, Reinhard Munz, Marcel Tiepelt, Simon Hanisch, Christiane Kuhn, and Paul Francis      | 2021 | **Side-Channel Attacks on Query-Based Data Anonymization.** <br> Proceedings of the 2021 ACM SIGSAC Conference on Computer and Communications Security (CCS’21), November15–19,2021,Virtual Event, Republic of Korea| [here](https://dl.acm.org/doi/pdf/10.1145/3460120.3484751)|
