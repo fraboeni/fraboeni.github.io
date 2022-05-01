@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-[download](/files/academic_cv_boe.pdf)
+[[download](/files/academic_cv_boe.pdf)]
 ## Professional Affiliations
 * 09/2019 - current: Researcher
   * Department of Secure Systems Engineering, Fraunhofer AISEC, Germany
@@ -49,9 +49,5 @@ redirect_from:
 * 2016, *DAAD*, [RISE Worlwide](https://www.daad.de/rise/en/rise-worldwide/) Research Scholarship
 * 2015-2019, *Studienstiftung des Deutschen Volkes*, [Scholarships for Outstanding Students](https://www.studienstiftung.de/en/about-us/)
 
-## Talks
-  <ul>{% for post in site.talks reversed  %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
   
 
