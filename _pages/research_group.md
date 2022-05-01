@@ -12,6 +12,8 @@ centered around privacy-preserving machine learning.
 
 | Student          | Program| Thesis Title | 
 | --------- |:---|:---------|
+| M. Nest    | Master   | Temporal Membership Inference Attacks |
+| I. Fendel    | Bachelor   | Group Membership Inference Attacks |
 | A. Meszaros    | Bachelor   | Taxonomy of Privacy Attacks in Machine Learning |
 
 
