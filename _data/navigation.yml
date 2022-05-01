@@ -12,6 +12,9 @@ main:
   - title: "Blog Posts"
     url: /privML_blog/
     
+  - title: "Talks"
+    url: /talks/  
+    
   - title: "CV"
     url: /cv/
     
