@@ -35,7 +35,7 @@ centered around privacy-preserving machine learning.
 
 Currently, the following topics are available:
 * Side Channel Attacks against Neural Networks (Master)
-* Property Inference Attacks against Neural Networks
+* Property Inference Attacks against Neural Networks (Master)
 * Bias in AI (Bachelor/Master)
 
 For a concrete description of the topics, please get in touch.
