@@ -10,7 +10,7 @@ redirect_from:
 Hello and welcome to my website. My name is Franziska Boenisch and I'm a research associate at Fraunhofer AISEC (Applied and Integrated Security). At the same time, I am pursuing a PhD at Freie Universität Berlin.
 
 # News
-I am excited to organize a workshop on Trustworthy Artificial Intelligence in Science and Society the fall at the INFORMATIK2022 conference. We are looking forward to your [submissions](https://easychair.org/cfp/trustworthy-ai-2022).
+I am excited to organize a workshop on *Trustworthy Artificial Intelligence in Science and Society* this fall at the INFORMATIK2022 conference. We are looking forward to your [submissions](https://easychair.org/cfp/trustworthy-ai-2022).
 
 # Research
 My research focus lies at the intersection of *Trustworthy Machine Learning* (ML) and *Privacy*. 
