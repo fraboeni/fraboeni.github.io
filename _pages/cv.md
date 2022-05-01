@@ -10,14 +10,14 @@ redirect_from:
 {% include base_path %}
 
 ## Professional Affiliations
-* 07/2021 - 11/2021: Research Intern
-  * Vector Institute, Toronto, Canada
-  * Supervisor: [Prof. Dr. Nicolas Papernot](https://www.papernot.fr/)
-
 * 09/2019 - current: Researcher
   * Department of Secure Systems Engineering, Fraunhofer AISEC, Germany
   * Duties included: Working in industrial and academic research projects concerning private machine learning and data protection
   * Supervisor: [Prof. Dr. Marian Margraf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/members/1_Professor_inn_en/Marian-Margraf/index.html)
+  
+* 07/2021 - 03/2022: Research Intern
+  * Vector Institute, Toronto, Canada
+  * Supervisor: [Prof. Dr. Nicolas Papernot](https://www.papernot.fr/)
   
 * 09/2017 - 01/2019: Research Assistant
   * Dahlem Center for Machine Learning and Robotics, Freie University Berlin, Germany
