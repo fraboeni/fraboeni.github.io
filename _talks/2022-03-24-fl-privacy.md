@@ -4,7 +4,7 @@ collection: talks
 type: "Interview"
 permalink: /talks/2022-03-24-fl-privacy
 venue: "Private AI Webinar"
-date: 2022-02-24
+date: 2022-03-24
 location: "Virtual"
 ---
 
