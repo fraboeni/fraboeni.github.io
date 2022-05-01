@@ -8,6 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
+[download](/files/academic_cv_boe.pdf)
 
 ## Professional Affiliations
 * 09/2019 - current: Researcher
