@@ -10,7 +10,10 @@ redirect_from:
 Hello and welcome to my website. My name is Franziska Boenisch and I'm a research associate at Fraunhofer AISEC (Applied and Integrated Security). At the same time, I am pursuing a PhD at Freie Universität Berlin.
 
 # News
-(May 1st 2022) I am excited to organize a workshop on *Trustworthy Artificial Intelligence in Science and Society* this fall at the INFORMATIK2022 conference. We are looking forward to your [submissions](https://easychair.org/cfp/trustworthy-ai-2022).
+
+(August 1st 2022) I'm happy to announce that I finalized my PhD duties and will be joining the Canadian Vector Institute as a Postdoctoral Fellow under the supervision of Prof. Dr. Nicolas Papernot by the end of the month.
+
+(May 1st 2022) I am excited to organize a workshop on *Trustworthy Artificial Intelligence in Science and Society* this fall at the INFORMATIK2022 conference.
 
 (April 30th 2022) Super proud that my interview on Differential Privacy with the Google-Aufbruch magazine made it to the [title page](https://kstatic.googleusercontent.com/files/1791d34518d7768efe0fb6d698f45a276c507ddbb67bcc916c87c564de8fc212023df574da98c9a8d8f149dc964371e003b6120b1f2188740a464ef157102ef4).
 
