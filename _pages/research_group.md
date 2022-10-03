@@ -5,8 +5,12 @@ permalink: /research_group/
 author_profile: true
 ---
 
-This page provides an overview on current activities of the *PrivML* research group I am coordinating. The topics are mainly (but not exclusively) 
-centered around privacy-preserving machine learning. 
+This page provides an overview on projects I am working on and students I am supervizing or have supervised in the past. 
+
+## Current projects and research interest
+- Individualizing privacy guarantees according to user preferences
+- Measuring and auditing privacy leakage in ML
+- Jointly optimizing for privacy and different aspects of trustworthy ML
 
 ## Currently ongoing theses
 
@@ -31,11 +35,11 @@ centered around privacy-preserving machine learning.
 | J. Ihrig        | Master   | Privacy Quantification Methods      |[pdf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/theseses/2021_Ihrig_MSc.pdf)|
 
 
-## Open topics
+## Open topics for collaboration
 
 Currently, the following topics are available:
-* Side Channel Attacks against Neural Networks (Master)
-* Property Inference Attacks against Neural Networks (Master)
-* Bias in AI (Bachelor/Master)
+* Side Channel Attacks against Neural Networks
+* Property Inference Attacks against Neural Networks
+* Bias in AI
 
-For a concrete description of the topics, please get in touch.
+If you are interested in collaborating in one of the topics mentioned above, please feel free to reach out.
