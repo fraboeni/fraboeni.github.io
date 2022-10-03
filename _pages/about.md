@@ -7,15 +7,12 @@ redirect_from:
   - /about.html
 ---
 
-Hello and welcome to my website. My name is Franziska Boenisch and I'm a research associate at Fraunhofer AISEC (Applied and Integrated Security). At the same time, I am pursuing a PhD at Freie Universität Berlin.
+Hello and welcome to my website. My name is Franziska Boenisch and I'm a Postdoctoral Fellow at the [Vector Institute for Artificial Intelligence](https://vectorinstitute.ai/) supervised by [Prof. Dr. Nicolas Papernot](https://www.papernot.fr/). Prior to joining Vector, I was a PhD candidate at Freie University Berlin and a research assosiate at the [Fraunhofer Institute for Applied and Integrated Security (AISEC)](https://www.aisec.fraunhofer.de/en.html).
 
 # News
 
-(August 1st 2022) I'm happy to announce that I finalized my PhD duties and will be joining the Canadian Vector Institute as a Postdoctoral Fellow under the supervision of Prof. Dr. Nicolas Papernot by the end of the month.
+(September 1st 2022) Our paper on Individualized Privacy Guarantees for Machine Learning was accepted for publication at PoPETs 2023.
 
-(May 1st 2022) I am excited to organize a workshop on *Trustworthy Artificial Intelligence in Science and Society* this fall at the INFORMATIK2022 conference.
-
-(April 30th 2022) Super proud that my interview on Differential Privacy with the Google-Aufbruch magazine made it to the [title page](https://kstatic.googleusercontent.com/files/1791d34518d7768efe0fb6d698f45a276c507ddbb67bcc916c87c564de8fc212023df574da98c9a8d8f149dc964371e003b6120b1f2188740a464ef157102ef4).
 
 # Research
 My research focus lies at the intersection of *Trustworthy Machine Learning* (ML) and *Privacy*. 
@@ -31,4 +28,16 @@ By then developing methods that jointly optimize for different aspects, I believ
 
 
 If you are interested in the activities of the *PrivML* research group I am building up and am coordinating, check out the tab [Research Group](https://fraboeni.github.io/research_group/). 
+
+
+
+
+
+
+# Prior 
+
+(August 1st 2022) I'm happy to announce that I finalized my PhD duties and will be joining the Canadian Vector Institute as a Postdoctoral Fellow under the supervision of Prof. Dr. Nicolas Papernot by the end of the month.
+
+(April 30th 2022) Super proud that my interview on Differential Privacy with the Google-Aufbruch magazine made it to the [title page](https://kstatic.googleusercontent.com/files/1791d34518d7768efe0fb6d698f45a276c507ddbb67bcc916c87c564de8fc212023df574da98c9a8d8f149dc964371e003b6120b1f2188740a464ef157102ef4).
+
 
