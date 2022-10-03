@@ -10,7 +10,13 @@ redirect_from:
 {% include base_path %}
 [[download](/files/academic_cv_boe.pdf)]
 ## Professional Affiliations
-* 09/2019 - current: Researcher
+
+* 08/2022 - current: Postdoctoral Fellow
+  * Vector Institute for Artificial Intelligence, Toronto, Canada
+  * Research interest: Privacy-preserving and trustworthy machine learning
+  * Supervisor: [Prof. Dr. Nicolas Papernot](https://www.papernot.fr/)
+  
+* 09/2019 - 08/2022: Researcher
   * Department of Secure Systems Engineering, Fraunhofer AISEC, Germany
   * Duties included: Working in industrial and academic research projects concerning private machine learning and data protection
   * Supervisor: [Prof. Dr. Marian Margraf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/members/1_Professor_inn_en/Marian-Margraf/index.html)
@@ -36,6 +42,7 @@ redirect_from:
 
 ## Education
 
+* Ph.D. in Computer Science, Freie University Berlin (Germany), 2022
 * M.S. in Computer Science, Freie University Berlin (Germany), 2019
 * Exchange semester, Eindhoven University of Technology (Netherlands), 2019 
 * B.S. in Computer Science, Freie University (Germany), 2017
