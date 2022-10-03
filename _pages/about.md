@@ -27,8 +27,8 @@ By then developing methods that jointly optimize for different aspects, I believ
 
 # News
 
-1. **September 2022:** Our paper on Individualized Privacy Guarantees for Machine Learning was accepted for publication at PoPETs 2023.
-2. **August 2022:** I'm happy to announce that I finalized my PhD duties and will be joining the Canadian Vector Institute as a Postdoctoral Fellow under the supervision of Prof. Dr. Nicolas Papernot by the end of the month.
-3. **April 2022:** Super proud that my interview on Differential Privacy with the Google-Aufbruch magazine made it to the [title page](https://kstatic.googleusercontent.com/files/1791d34518d7768efe0fb6d698f45a276c507ddbb67bcc916c87c564de8fc212023df574da98c9a8d8f149dc964371e003b6120b1f2188740a464ef157102ef4).
+-  **September 2022:** Our paper on Individualized Privacy Guarantees for Machine Learning was accepted for publication at PoPETs 2023.
+- **August 2022:** I'm happy to announce that I finalized my PhD duties and will be joining the Canadian Vector Institute as a Postdoctoral Fellow under the supervision of Prof. Dr. Nicolas Papernot by the end of the month.
+- **April 2022:** Super proud that my interview on Differential Privacy with the Google-Aufbruch magazine made it to the [title page](https://kstatic.googleusercontent.com/files/1791d34518d7768efe0fb6d698f45a276c507ddbb67bcc916c87c564de8fc212023df574da98c9a8d8f149dc964371e003b6120b1f2188740a464ef157102ef4).
 
 
