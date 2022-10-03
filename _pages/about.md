@@ -9,10 +9,6 @@ redirect_from:
 
 Hello and welcome to my website. My name is Franziska Boenisch and I'm a Postdoctoral Fellow at the [Vector Institute for Artificial Intelligence](https://vectorinstitute.ai/) supervised by [Prof. Dr. Nicolas Papernot](https://www.papernot.fr/). Prior to joining Vector, I was a PhD candidate at Freie University Berlin and a research assosiate at the Fraunhofer Institute for Applied and Integrated Security [(AISEC)](https://www.aisec.fraunhofer.de/en.html).
 
-# News
-
-(September 1st 2022) Our paper on Individualized Privacy Guarantees for Machine Learning was accepted for publication at PoPETs 2023.
-
 
 # Research
 My research focus lies at the intersection of *Trustworthy Machine Learning* (ML) and *Privacy*. 
@@ -27,14 +23,12 @@ By then developing methods that jointly optimize for different aspects, I believ
 
 
 
-If you are interested in the activities of the *PrivML* research group I am building up and am coordinating, check out the tab [Research Group](https://fraboeni.github.io/research_group/). 
 
 
+# News
 
+(September 1st 2022) Our paper on Individualized Privacy Guarantees for Machine Learning was accepted for publication at PoPETs 2023.
 
-
-
-# Prior 
 
 (August 1st 2022) I'm happy to announce that I finalized my PhD duties and will be joining the Canadian Vector Institute as a Postdoctoral Fellow under the supervision of Prof. Dr. Nicolas Papernot by the end of the month.
 
