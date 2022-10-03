@@ -27,7 +27,7 @@ By then developing methods that jointly optimize for different aspects, I believ
 
 # News
 
-- **September 2022:**  Paper accepted at the 36th Conference on Neural Information Processing Systems (NeurIPS'22): [https://arxiv.org/abs/2209.09024](Dataset Inference for Self-Supervised Models).
+- **September 2022:**  Paper accepted at the 36th Conference on Neural Information Processing Systems (NeurIPS'22): [Dataset Inference for Self-Supervised Models](https://arxiv.org/abs/2209.09024).
 - **September 2022:** Paper accepted for publication at PoPETs'23: [Individualized PATE: Differentially Private Machine Learning with Individual Privacy Guarantees](https://arxiv.org/abs/2202.10517).
 - **August 2022:** I'm happy to announce that I finalized my PhD duties and will be joining the Canadian Vector Institute as a Postdoctoral Fellow under the supervision of Prof. Dr. Nicolas Papernot by the end of the month.
 - **April 2022:** Super proud that my interview on Differential Privacy with the Google-Aufbruch magazine made it to the [title page](https://kstatic.googleusercontent.com/files/1791d34518d7768efe0fb6d698f45a276c507ddbb67bcc916c87c564de8fc212023df574da98c9a8d8f149dc964371e003b6120b1f2188740a464ef157102ef4).
