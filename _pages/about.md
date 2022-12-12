@@ -27,6 +27,8 @@ By then developing methods that jointly optimize for different aspects, I believ
 
 # News
 
+- **December 2022:**  Our Workshop on Trustworthy ML under Limited Data and Compute was accepted for ICLR'23. Link to CfP coming soon!
+- **November 2022:**  Paper accepted for publication at PoPETs'23: [A Unified Framework for Quantifying Privacy Risk in Synthetic Data](https://arxiv.org/pdf/2211.10459.pdf).
 - **September 2022:**  Paper accepted at the 36th Conference on Neural Information Processing Systems (NeurIPS'22): [Dataset Inference for Self-Supervised Models](https://arxiv.org/abs/2209.09024).
 - **September 2022:** Paper accepted for publication at PoPETs'23: [Individualized PATE: Differentially Private Machine Learning with Individual Privacy Guarantees](https://arxiv.org/abs/2202.10517).
 - **August 2022:** I'm happy to announce that I finalized my PhD duties and will be joining the Canadian Vector Institute as a Postdoctoral Fellow under the supervision of Prof. Dr. Nicolas Papernot by the end of the month.
