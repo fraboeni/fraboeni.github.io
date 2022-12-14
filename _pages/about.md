@@ -11,9 +11,9 @@ Hello and welcome to my website. My name is Franziska Boenisch and I'm a Postdoc
 
 
 # Research
-My research focus lies at the intersection of *Trustworthy Machine Learning* (ML) and *Privacy*. 
+My research focus lies at the intersection of *Trustworthy Machine Learning* (ML) and *Privacy* from the perspective of individual users and data owners. 
 
-Research has shown that trained ML models do not necessarily provide privacy for the underlying training datasets, as some attacks allow to restore (aspects of) the training data from the model parameters (e.g. [model inversion attacks](/posts/2020/12/model-inversion/)), or others allow to find out if a specific data point was included in the training dataset or not ([membership inference attacks](/posts/2021/01/membership-inference/)). Both can be harmful for the privacy of the individuals whose data is represented in the training dataset.
+Research has shown that trained ML models do not necessarily provide privacy for the underlying training datasets, as some attacks allow to restore (aspects of) the training data from the model parameters (e.g. [model inversion attacks](/posts/2020/12/model-inversion/)), or others allow to find out if an individual data point was included in the training dataset or not ([membership inference attacks](/posts/2021/01/membership-inference/)). Both can be harmful for the privacy of the individuals whose data is represented in the training dataset.
 Therefore, protecting privacy in ML models is a crucial task. I’m currently mainly researching in the area of [*Differential Privacy*](/posts/2021/03/differential-privacy/), a mathematical framework that provides formal privacy guarantees. I'm also looking into the practical evaluation of privacy loss and into the identification of potential sources for privacy leakage in privacy preserving technologies. Identifying such pain points allows us to develop a better understanding on why practical privacy stays behind the strong theoretical guarantees. This helps in adapting and extending theoretical frameworks, their implementations and their integration into real-worlds systems for enhanced privacy in practice.
 
 Furthermore, I am investigating the impact that ML privacy has on other aspects of trustworthy ML, such as [robustness](https://arxiv.org/pdf/2105.07985.pdf), fairness, and biases.
