@@ -31,6 +31,7 @@ By then developing methods that jointly optimize for different aspects, I believ
 - **November 2022:**  Paper accepted for publication at PoPETs'23: [A Unified Framework for Quantifying Privacy Risk in Synthetic Data](https://arxiv.org/pdf/2211.10459.pdf).
 - **September 2022:**  Paper accepted at the 36th Conference on Neural Information Processing Systems (NeurIPS'22): [Dataset Inference for Self-Supervised Models](https://arxiv.org/abs/2209.09024).
 - **September 2022:** Paper accepted for publication at PoPETs'23: [Individualized PATE: Differentially Private Machine Learning with Individual Privacy Guarantees](https://arxiv.org/abs/2202.10517).
+- **September 2022:** We're presenting our paper on [Introducing Model Inversion Attacks on Automatic Speaker Recognition](https://www.isca-speech.org/archive/pdfs/spsc_2022/pizzi22_spsc.pdf) at the 2nd Symposium on Security and Privacy in Speech Communication (SPSC).
 - **August 2022:** I'm happy to announce that I finalized my PhD duties and will be joining the Canadian Vector Institute as a Postdoctoral Fellow under the supervision of Prof. Dr. Nicolas Papernot by the end of the month.
 - **April 2022:** Super proud that my interview on Differential Privacy with the Google-Aufbruch magazine made it to the [title page](https://kstatic.googleusercontent.com/files/1791d34518d7768efe0fb6d698f45a276c507ddbb67bcc916c87c564de8fc212023df574da98c9a8d8f149dc964371e003b6120b1f2188740a464ef157102ef4).
 
