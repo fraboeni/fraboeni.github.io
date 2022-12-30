@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Franziska Boenisch"
   avatar           : "FranziskaBoenisch.jpg"
-  bio              : "Postdoctoral Fellow<br/>@ Vector Institute<br/><br/>Research focus:<br/>Privacy-Preserving and Trustworthy ML.<br/>Encrypted messages using: [PGP Key](Franziska Boenisch_public_key.asc)"
+  bio              : "Postdoctoral Fellow<br/>@ Vector Institute<br/><br/>Research focus:<br/>Privacy-Preserving and Trustworthy ML."
   location         : "Toronto, Canada"
   employer         :
   pubmed           : 
@@ -98,7 +98,7 @@ author:
   foursquare       :
   github           : "fraboeni"
   google_plus      :
-  keybase          :
+  keybase          :"Franziska Boenisch_public_key.asc"
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
