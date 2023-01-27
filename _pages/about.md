@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello and welcome to my website. My name is Franziska Boenisch and I'm a Postdoctoral Fellow at the [Vector Institute for Artificial Intelligence](https://vectorinstitute.ai/) supervised by [Prof. Dr. Nicolas Papernot](https://www.papernot.fr/). Prior to joining Vector, I was a PhD candidate at Freie University Berlin and a research assosiate at the Fraunhofer Institute for Applied and Integrated Security [(AISEC)](https://www.aisec.fraunhofer.de/en.html).
+My name is Franziska Boenisch and I'm a Postdoctoral Fellow at the [Vector Institute for Artificial Intelligence](https://vectorinstitute.ai/) supervised by [Prof. Dr. Nicolas Papernot](https://www.papernot.fr/). Prior to joining Vector, I was a PhD candidate at Freie University Berlin and a research assosiate at the Fraunhofer Institute for Applied and Integrated Security [(AISEC)](https://www.aisec.fraunhofer.de/en.html).
 
 
 # Research

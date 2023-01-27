@@ -4,10 +4,7 @@ main:
     url: /publications/
 
   - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Research Group"
-    url: /research_group/    
+    url: /teaching/
         
   - title: "Blog Posts"
     url: /privML_blog/
