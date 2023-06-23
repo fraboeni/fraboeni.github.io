@@ -7,7 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-My name is Franziska Boenisch and I'm a Postdoctoral Fellow at the [Vector Institute for Artificial Intelligence](https://vectorinstitute.ai/) supervised by [Prof. Dr. Nicolas Papernot](https://www.papernot.fr/). Prior to joining Vector, I was a PhD candidate at Freie University Berlin and a research assosiate at the Fraunhofer Institute for Applied and Integrated Security [(AISEC)](https://www.aisec.fraunhofer.de/en.html).
+My name is Franziska Boenisch an incoming tenure track faculty at the [CISPA Helmholtz Center for Information Security](https://cispa.de/en) where I be co-leading the [SprintML lab](https://sprintml.com/) for Secure, Private, Robust, INterpretable, and Trustworthy Machine Learning.
+Before, I was a Postdoctoral Fellow at the [Vector Institute for Artificial Intelligence](https://vectorinstitute.ai/) supervised by [Prof. Dr. Nicolas Papernot](https://www.papernot.fr/). Prior to joining Vector, I was a PhD candidate at Freie University Berlin and a research assosiate at the Fraunhofer Institute for Applied and Integrated Security [(AISEC)](https://www.aisec.fraunhofer.de/en.html).
 
 
 # Research
