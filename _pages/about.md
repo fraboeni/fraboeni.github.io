@@ -7,9 +7,12 @@ redirect_from:
   - /about.html
 ---
 
-My name is Franziska Boenisch an incoming tenure track faculty at the [CISPA Helmholtz Center for Information Security](https://cispa.de/en) where I will be co-leading the [SprintML lab](https://sprintml.com/) for Secure, Private, Robust, INterpretable, and Trustworthy Machine Learning.
+I am Franziska Boenisch, tenure track faculty at the [CISPA Helmholtz Center for Information Security](https://cispa.de/en).
+At CISPA, I am co-leading the [SprintML lab](https://sprintml.com/) for Secure, Private, Robust, INterpretable, and Trustworthy Machine Learning.
 Before, I was a Postdoctoral Fellow at the [Vector Institute for Artificial Intelligence](https://vectorinstitute.ai/) supervised by [Prof. Dr. Nicolas Papernot](https://www.papernot.fr/). Prior to joining Vector, I was a PhD candidate at Freie University Berlin and a research assosiate at the Fraunhofer Institute for Applied and Integrated Security [(AISEC)](https://www.aisec.fraunhofer.de/en.html).
 
+# I am Hiring!
+Currently, I am looking for PhDs, Postdocs, and Research Interns. If you are excited about working on trustworthy ML, please drop me a mail with your CV, current transcript, and a motivation why you want to apply to my group. 
 
 # Research
 My research focus lies at the intersection of *Trustworthy Machine Learning* (ML) and *Privacy* from the perspective of individual users and data owners. 
@@ -27,13 +30,15 @@ By then developing methods that jointly optimize for different aspects, I believ
 
 
 # News
-
+- **September 2023:** I am excited that three of our papers were accepted at the NeurIPS conference.
+- **September 2023:** I started as a tenure track faculty at CISPA.
+- **July 2023:** Meet me at the PETs and IEEE Euro S&P conference, where I will be presenting our work on [Individually Privaet Machine Learning](https://www.petsymposium.org/2023/files/papers/issue1/popets-2023-0010.pdf), [Privacy Assessment of Synthetic Data](https://www.petsymposium.org/2023/files/papers/issue2/popets-2023-0055.pdf), [Privacy Risks in Federated Learning](https://arxiv.org/pdf/2112.02918.pdf?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment-text), and [Data Extraction Attacks in Federated Learning](https://arxiv.org/pdf/2301.04017.pdf)
 - **December 2022:**  Our Workshop on Trustworthy ML under Limited Data and Compute was accepted for ICLR'23. [CfP here](https://sites.google.com/view/trustml-unlimited/home?authuser=0).
 - **November 2022:**  Paper accepted for publication at PETS'23: [A Unified Framework for Quantifying Privacy Risk in Synthetic Data](https://arxiv.org/pdf/2211.10459.pdf).
-- **September 2022:**  Paper accepted at the 36th Conference on Neural Information Processing Systems (NeurIPS'22): [Dataset Inference for Self-Supervised Models](https://arxiv.org/abs/2209.09024).
+<!---- **September 2022:**  Paper accepted at the 36th Conference on Neural Information Processing Systems (NeurIPS'22): [Dataset Inference for Self-Supervised Models](https://arxiv.org/abs/2209.09024).
 - **September 2022:** Paper accepted for publication at PETS'23: [Individualized PATE: Differentially Private Machine Learning with Individual Privacy Guarantees](https://arxiv.org/abs/2202.10517).
 - **September 2022:** We're presenting our paper on [Introducing Model Inversion Attacks on Automatic Speaker Recognition](https://www.isca-speech.org/archive/pdfs/spsc_2022/pizzi22_spsc.pdf) at the 2nd Symposium on Security and Privacy in Speech Communication (SPSC).
 - **August 2022:** I'm happy to announce that I finalized my PhD duties and will be joining the Canadian Vector Institute as a Postdoctoral Fellow under the supervision of Prof. Dr. Nicolas Papernot by the end of the month.
-- **April 2022:** Super proud that my interview on Differential Privacy with the Google-Aufbruch magazine made it to the [title page](https://kstatic.googleusercontent.com/files/1791d34518d7768efe0fb6d698f45a276c507ddbb67bcc916c87c564de8fc212023df574da98c9a8d8f149dc964371e003b6120b1f2188740a464ef157102ef4).
+- **April 2022:** Super proud that my interview on Differential Privacy with the Google-Aufbruch magazine made it to the [title page](https://kstatic.googleusercontent.com/files/1791d34518d7768efe0fb6d698f45a276c507ddbb67bcc916c87c564de8fc212023df574da98c9a8d8f149dc964371e003b6120b1f2188740a464ef157102ef4).--->
 
 
