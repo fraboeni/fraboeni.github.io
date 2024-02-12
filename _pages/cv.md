@@ -6,9 +6,10 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-
+<!--- 
 {% include base_path %}
-[[download](/files/academic_cv_boe.pdf)]
+[[download](/files/academic_cv_boe.pdf)]--->
+
 ## Professional Affiliations
 * 09/2023 - current: Tenure-Track Faculty
   * CISPA Helmholtz Center for Information Security, Saarbrücken, Germany
