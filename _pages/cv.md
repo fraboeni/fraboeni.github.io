@@ -10,8 +10,12 @@ redirect_from:
 {% include base_path %}
 [[download](/files/academic_cv_boe.pdf)]
 ## Professional Affiliations
+* 09/2023 - current: Tenure-Track Faculty
+  * CISPA Helmholtz Center for Information Security, Saarbrücken, Germany
+  * Research interest: Privacy-preserving and trustworthy machine learning
+  * Co-Lead of: [SprintML Lab](https://sprintml.com)
 
-* 08/2022 - current: Postdoctoral Fellow
+* 08/2022 - 08/2023: Postdoctoral Fellow
   * Vector Institute for Artificial Intelligence, Toronto, Canada
   * Research interest: Privacy-preserving and trustworthy machine learning
   * Supervisor: [Prof. Dr. Nicolas Papernot](https://www.papernot.fr/)
