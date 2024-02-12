@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Franziska Boenisch"
 title_separator          : "-"
 name                     : &name "Franziska Boenisch"
-description              : &description "I am a researcher interested in privacy-preserving and trustworthy machine learning. I am currenly being employed as a Postdoctoral Fellow at the Vector Institute for AI in Toronto. Before, I obtained my PhD from Freie University Berlin."
+description              : &description "I am a researcher interested in privacy-preserving and trustworthy machine learning. I am currenly a tenure-track faculty at CISPA. Before, I was a Postdoctoral Fellow at the Vector Institute for AI in Toronto. I obtained my PhD from Freie University Berlin."
 url                      : https://fraboeni.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "fraboeni/fraboeni.github.io"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Franziska Boenisch"
   avatar           : "FranziskaBoenisch.jpg"
-  bio              : "Postdoctoral Fellow<br/>@ Vector Institute<br/><br/>Research focus:<br/>Privacy-Preserving and Trustworthy ML."
-  location         : "Toronto, Canada"
+  bio              : "Tenure-Track Faculty<br/>@ CISPA<br/><br/>Research focus:<br/>Privacy-Preserving and Trustworthy ML."
+  location         : "Saarbrücken, Germany"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=jKY0y8gAAAAJ"
