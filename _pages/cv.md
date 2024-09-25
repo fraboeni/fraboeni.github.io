@@ -21,7 +21,7 @@ redirect_from:
   * Research interest: Privacy-preserving and trustworthy machine learning
   * Supervisor: [Prof. Dr. Nicolas Papernot](https://www.papernot.fr/)
   
-* 09/2019 - 08/2022: Researcher
+* 09/2019 - 08/2022: PhD Student and Research Associate
   * Department of Secure Systems Engineering, Fraunhofer AISEC, Germany
   * Duties included: Working in industrial and academic research projects concerning private machine learning and data protection
   * Supervisor: [Prof. Dr. Marian Margraf](https://www.mi.fu-berlin.de/inf/groups/ag-idm/members/1_Professor_inn_en/Marian-Margraf/index.html)
@@ -55,6 +55,10 @@ redirect_from:
  
  
 ## Prizes and Honors
+* 2024, *Gesellschaft für Informatik*, named [GI Junior-Fellow](https://gi.de/meldung/ki-medizin-recht-diversitaet-gi-vier-informatik-talente-zu-junior-fellows) for my achievements in Trustworthy ML and diversity in computer science
+* 2024, *Saarland University*, [Busy Beaver Teaching Award](https://cispa.de/en/busy-beaver-awards) for my seminar on Differential Privacy in Machine Learning
+* 2024, *SaTML Conference*, Notable Reviewer Award
+* 2023, *Fraunhofer Gesellschaft*, 2nd prize in [Fraunhofer IuK Dissertation Award](https://www.iuk.fraunhofer.de/de/news-web/2024/ict-winners-2023.html)
 * 2020, [*Forum Junge Spitzenforscher*](http://forumjungespitzenforscher.de/en/review-2020/), 3rd prize in the competition for applied science in AI
 * 2019-2021, *Fraunhofer-Gesellschaft*, [Talenta Start Scholarship](https://www.fraunhofer.de/de/jobs-und-karriere/wissenschaftlerinnen/fraunhofer-talenta/start.html)
 * 2018, *Hasso Plattner Institute*, [Grace Hopper Travel Scholarship](https://hpi.de/news/jahrgaenge/2018/grace-hopper-celebration-stipendiatinnen-reisen-in-die-usa.html)
