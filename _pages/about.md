@@ -30,7 +30,12 @@ By then developing methods that jointly optimize for different aspects, I believ
 
 
 # News
-- **September 2023:** I am excited that three of our papers were accepted at the NeurIPS conference.
+- **September 2024:** I was named a [GI Junior-Fellow](https://gi.de/meldung/ki-medizin-recht-diversitaet-gi-vier-informatik-talente-zu-junior-fellows) for my work on trustworthy ML and my committment to diversity in computer science.
+- **July 2024:** All lectures from my new lecture series on Trustworthy Machine Learning are now [online](https://www.youtube.com/watch?v=plya81v-ZQo&list=PLNfU-a7sxIwvS7dhnOPdFtvhdNcrnufEW&pp=iAQB).
+- **June 2024:** We reached another milestone, our SprintML Lab research group has reached [20 members](https://sprintml.com/team/) (from 10 different countries!). Super exciting.
+- **May 2024:** We are presenting our novel work on [Memorization in Self-Supervised Learning](https://arxiv.org/pdf/2401.12233) at the ICLR conference in Vienna.
+- **January 2024:** My PhD dissertation was awarded the [2nd Prize in the Fraunhofer IuK Dissertation Award](https://www.iuk.fraunhofer.de/de/news-web/2024/ict-winners-2023.html).
+- **September 2023:** I am excited that *three* of our papers were accepted at the NeurIPS conference.
 - **September 2023:** I started as a tenure track faculty at CISPA.
 - **July 2023:** Meet me at the PETs and IEEE Euro S&P conference, where I will be presenting our work on [Individually Privaet Machine Learning](https://www.petsymposium.org/2023/files/papers/issue1/popets-2023-0010.pdf), [Privacy Assessment of Synthetic Data](https://www.petsymposium.org/2023/files/papers/issue2/popets-2023-0055.pdf), [Privacy Risks in Federated Learning](https://arxiv.org/pdf/2112.02918.pdf?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment-text), and [Data Extraction Attacks in Federated Learning](https://arxiv.org/pdf/2301.04017.pdf)
 - **December 2022:**  Our Workshop on Trustworthy ML under Limited Data and Compute was accepted for ICLR'23. [CfP here](https://sites.google.com/view/trustml-unlimited/home?authuser=0).
