@@ -10,6 +10,9 @@ This page provides an overview on my teaching experience so far.
 
 | Lecturer &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;           |                                                               |
 | ---------          |:---------                                                      |
+| Winter 2024/25        | *Seminar:* [Differential Privacy in the Era of Foundation Models](https://cms.cispa.saarland/dp_in_ml/) |
+| Summer 2024       | *Lecture:* [Trustworthy Machine Learning](https://cms.cispa.saarland/tml/) |
+| Winter 2023/24        | *Seminar:* [Differential Privacy: Mathematical Foundations and Applications in Machine Learning](https://cms.cispa.saarland/dp_in_ml/) |
 | Summer 2022        | *Seminar:* [Trustworthy Machine Learning](/teaching/2022-spring-teaching-trustML) |
 | Summer 2021        | *Software project:* [Privacy Quantification in Machine Learning](/teaching/2021-spring-teaching-privML) |
 | Summer 2020        | *Seminar:* [Hello (brand new data) world](https://fraboeni.github.io/teaching/2020-spring-teaching-ethicalML)     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;          |
