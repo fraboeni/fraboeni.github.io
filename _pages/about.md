@@ -30,6 +30,8 @@ By then developing methods that jointly optimize for different aspects, I believ
 
 
 # News
+- **October 2024:** We kicked-off our [ILLUMINATION[(https://cispa.de/illumination-kickoff) research grant project that I am coordinating. 
+- **September 2024:** Three of our papers were accepted to NeurIPS'24. Excited to present our work on [localizing memorization in SSL vision encoders' parameters](https://arxiv.org/pdf/2409.19069), [neuron interventions in diffusion models to prevent privacy leakage](https://openreview.net/pdf?id=5wOrSneuwe), and on [private large language model adaptations](https://openreview.net/pdf?id=uGml3wUL8s) in Vancouver! 
 - **September 2024:** I was named a [GI Junior-Fellow](https://gi.de/meldung/ki-medizin-recht-diversitaet-gi-vier-informatik-talente-zu-junior-fellows) for my work on trustworthy ML and my committment to diversity in computer science.
 - **July 2024:** All lectures from my new lecture series on Trustworthy Machine Learning are now [online](https://www.youtube.com/watch?v=plya81v-ZQo&list=PLNfU-a7sxIwvS7dhnOPdFtvhdNcrnufEW&pp=iAQB).
 - **June 2024:** We reached another milestone, our SprintML Lab research group has reached [20 members](https://sprintml.com/team/) (from 10 different countries!). Super exciting.
