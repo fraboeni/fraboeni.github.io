@@ -55,6 +55,7 @@ redirect_from:
  
  
 ## Prizes and Honors
+* 2025, *Academics*, 3rd prize in the [Rising Star Award](https://www.academics.de/services/nachwuchspreis-nachwuchswissenschaftler-des-jahres) that honors the most outstanding researchers in Germany over all universities and research institutes, over all disciplines, and over all (academic) ages.
 * 2024, *Gesellschaft für Informatik*, named [GI Junior-Fellow](https://gi.de/meldung/ki-medizin-recht-diversitaet-gi-vier-informatik-talente-zu-junior-fellows) for my achievements in Trustworthy ML and diversity in computer science
 * 2024, *Saarland University*, [Busy Beaver Teaching Award](https://cispa.de/en/busy-beaver-awards) for my seminar on Differential Privacy in Machine Learning
 * 2024, *SaTML Conference*, Notable Reviewer Award
