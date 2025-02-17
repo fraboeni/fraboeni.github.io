@@ -30,6 +30,9 @@ By then developing methods that jointly optimize for different aspects, I believ
 
 
 # News
+- **January 2025:** Our SprintML Lab has three papers accepted for ICLR'25.
+- **January 2025:** I received the third price of the [Academics Rising Start Award (Nachwuchspreis)](https://www.academics.de/services/nachwuchspreis-nachwuchswissenschaftler-des-jahres) that honors the most outstanding researchers in Germany over *all German universities*, over *all fields*, and over *all scientific ages*. I feel very honored for this recognition.
+- **December 2024:**: Our work on facilitating differentially private learning through private prototypes was accepted to [AAAI'25](https://arxiv.org/abs/2406.08039).
 - **October 2024:** We kicked-off our [ILLUMINATION](https://cispa.de/illumination-kickoff) research grant project that I am coordinating. 
 - **September 2024:** Three of our papers were accepted to NeurIPS'24. Excited to present our work on [localizing memorization in SSL vision encoders' parameters](https://arxiv.org/pdf/2409.19069), [neuron interventions in diffusion models to prevent privacy leakage](https://openreview.net/pdf?id=5wOrSneuwe), and on [private large language model adaptations](https://openreview.net/pdf?id=uGml3wUL8s) in Vancouver! 
 - **September 2024:** I was named a [GI Junior-Fellow](https://gi.de/meldung/ki-medizin-recht-diversitaet-gi-vier-informatik-talente-zu-junior-fellows) for my work on trustworthy ML and my committment to diversity in computer science.
