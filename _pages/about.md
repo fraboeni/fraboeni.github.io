@@ -30,6 +30,8 @@ By then developing methods that jointly optimize for different aspects, I believ
 
 
 # News
+- **April 2025:** I was named Distinguished Reviewer for the SaTML conference the second year in a row.
+- **February 2025:** Our paper on [ownership resolution for diffusion models](https://arxiv.org/pdf/2411.12858) was accepted to CVPR'25.
 - **January 2025:** Our SprintML Lab has three papers accepted for ICLR'25.
 - **January 2025:** I received the third price of the [Academics Rising Start Award (Nachwuchspreis)](https://www.academics.de/services/nachwuchspreis-nachwuchswissenschaftler-des-jahres) that honors the most outstanding researchers in Germany over *all German universities*, over *all fields*, and over *all scientific ages*. I feel very honored for this recognition.
 - **December 2024:**: Our work on facilitating differentially private learning through private prototypes was accepted to [AAAI'25](https://arxiv.org/abs/2406.08039).
