@@ -30,6 +30,10 @@ By then developing methods that jointly optimize for different aspects, I believ
 
 
 # News
+- **July 2025:** I am co-organizing two workshop at ICML'25 in Vancouver: [MemFM](https://icml2025memfm.github.io) on the Impact of Memorization on Trustworthy Foundation Models, and [DIG-BUGS](https://icml2025digbugs.github.io) on Building Reliable and Trustworthy Generative AI. Hope to see you there.
+- **June 2025:** I will be track chair the track on *Machine Learning* for this year's [ACM AsiaCCS](https://asiaccs2026.cse.iitkgp.ac.in/program-committee/) conference.
+- **June 2025:** I will be serving as an *Area Chair* for this year's NeurIPS conference.
+- **May 2025:** Our SprintML Lab has three accepted papers for ICML'25.
 - **April 2025:** I was named Distinguished Reviewer for the SaTML conference the second year in a row.
 - **February 2025:** Our paper on [ownership resolution for diffusion models](https://arxiv.org/pdf/2411.12858) was accepted to CVPR'25.
 - **January 2025:** Our SprintML Lab has three papers accepted for ICLR'25.
