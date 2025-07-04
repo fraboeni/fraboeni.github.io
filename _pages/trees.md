@@ -19,9 +19,7 @@ This page provides study materials on decision trees. It introduces the intuitio
 
 ## Watch the Talk
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/9C5EmAVkgAg?si=rQEACPBoJxDuXbPT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+
 ---
 
 ## Download the Slides
