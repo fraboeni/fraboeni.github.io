@@ -18,19 +18,19 @@ This page provides study materials on decision trees. It introduces the intuitio
 
 ## Watch the Talk
 
-<iframe width="560" height="315" src="https://youtu.be/9C5EmAVkgAg" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9C5EmAVkgAg" frameborder="0" allowfullscreen></iframe>
 
 ---
 
 ## Download the Slides
 
-[![Slides Preview](/images/trees.png)](https://yourdomain.com/path-to-your-slides.pdf)
+📄 Please click the image to download/view the slides (PDF).
 
 <a href="{% include base_path %}/assets/slides/decision_trees.pdf">
-  <img src="/images/trees.png" alt="Slides Preview" width="250">
+  <img src="/images/trees.png" alt="Slides Preview" width="300" style="display:block; margin:auto;">
 </a>
 
-> 📄 Click the image to download/view the slides (PDF).
+
 
 ---
 
