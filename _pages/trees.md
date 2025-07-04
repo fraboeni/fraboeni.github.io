@@ -16,12 +16,13 @@ layout: archive
 
 This page provides study materials on decision trees and explainable AI. It introduces the intuition behind how **decision trees** work and explains how to build them using **impurity-based importance** calculations. The content also covers **feature importance** and discusses how these concepts relate to **explainable AI**.
 
-## (Re-)Watch the Talk
+## (Re-)Watch the Lecture
 
+<div style="max-width: 800px; margin: auto;">
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/9C5EmAVkgAg?si=rQEACPBoJxDuXbPT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/4tCFKR_1ILY?si=5UWEUfQRsm3-_5XE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-
+</div>
 
 ---
 
@@ -29,8 +30,8 @@ This page provides study materials on decision trees and explainable AI. It intr
 
 📄 Please click the image to download/view the slides (PDF).
 
-<a href="{% include base_path %}/assets/slides/decision_trees.pdf">
-  <img src="/images/trees.png" alt="Slides Preview" width="800" style="display:block; margin:auto;">
+<a href="{% include base_path %}/files/2025-07-trees/lecture-slides.pdf">
+  <img src="/files/2025-07-trees/trees.png" alt="Slides Preview" width="800" style="display:block; margin:auto;">
 </a>
 
 
@@ -41,13 +42,16 @@ This page provides study materials on decision trees and explainable AI. It intr
 
 Using the lecture notes, I made an AI-generated podcast with NotebookLM. 
 
-
+<audio controls>
+  <source src="/files/2025-07-trees/trees-podcast.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
 
 ---
 
 ## Play with the Code  
 
-The following code shows you how to use sklearn's decision trees. If you want to practice how to implement a decision tree, please check out the coding exercise I prepared in this [GitHub Repo](https://github.com/yourusername/your-repo).
+The following code shows you how to use sklearn's decision trees. If you want to practice how to implement a decision tree, please check out the coding exercise I prepared in this [GitHub Repo](https://github.com/fraboeni/trees/blob/main/decision_trees_and_feature_importance.ipynb).
 ```python
 import pandas as pd             # to have nice data frames
 from sklearn import tree        # for the decision tree
@@ -76,3 +80,4 @@ print(impotances_gini)
 1. Full [Stanford Lecture](https://www.youtube.com/watch?v=wr9gUr-eWdA) on Decision Trees
 2. Small [Lecture Video](https://www.youtube.com/watch?v=_L39rN6gz7Y ) on Gini Impurity
 3. Book: Pattern Recognition and Machine Learning, [Chapter 14.4](https://github.com/Benlau93/Data-Science-Curriculum/blob/master/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)
+4. Book: Interpretable Machine Learning, [Chapter 9](https://christophm.github.io/interpretable-ml-book/)
