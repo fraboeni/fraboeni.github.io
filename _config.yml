@@ -98,7 +98,7 @@ author:
   foursquare       :
   github           : "fraboeni"
   google_plus      :
-  keybase          : "https://franziska-boenisch.de/files/Franziska%20Boenisch_public_key.asc"
+  keybase          : 
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
@@ -185,7 +185,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
@@ -228,13 +228,13 @@ defaults:
       share: true
       comments: true
   # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
+  # - scope:
+  #     path: ""
+  #     type: talks
+  #   values:
+  #     layout: talk
+  #     author_profile: true
+  #     share: true
   # _talks
   - scope:
       path: ""

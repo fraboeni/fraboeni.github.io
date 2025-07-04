@@ -1,7 +1,8 @@
 ---
 title: "Feature Importance in Decision Trees"
-excerpt: "In this blogpost I introduce the concept of decision trees, feature importance, and how these are useful for explainable AI."
-permalink: /decision-trees/
+date: 2025-07-01
+permalink: /trees/
+layout: archive
 ---
 
 <script src="//yihui.org/js/math-code.js"></script>
@@ -13,22 +14,32 @@ permalink: /decision-trees/
 {% include base_path %}
 
 
-UPDATE
-
 This page provides study materials on decision trees and explainable AI. It introduces the intuition behind how **decision trees** work and explains how to build them using **impurity-based importance** calculations. The content also covers **feature importance** and discusses how these concepts relate to **explainable AI**.
 
-## Watch the Talk
+## (Re-)Watch the Talk
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/9C5EmAVkgAg?si=rQEACPBoJxDuXbPT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 
 ---
 
-## Download the Slides
+## Download the Lecture Slides
 
 📄 Please click the image to download/view the slides (PDF).
 
 <a href="{% include base_path %}/assets/slides/decision_trees.pdf">
-  <img src="/images/trees.png" alt="Slides Preview" width="300" style="display:block; margin:auto;">
+  <img src="/images/trees.png" alt="Slides Preview" width="800" style="display:block; margin:auto;">
 </a>
+
+
+
+---
+
+## Listen to the Podcast
+
+Using the lecture notes, I made an AI-generated podcast with NotebookLM. 
 
 
 
@@ -60,7 +71,7 @@ impotances_gini = clf_gini.feature_importances_
 print(impotances_gini)
 ```
 
-## Find Additional Study Materials:
+## Find Additional Study Materials
 
 1. Full [Stanford Lecture](https://www.youtube.com/watch?v=wr9gUr-eWdA) on Decision Trees
 2. Small [Lecture Video](https://www.youtube.com/watch?v=_L39rN6gz7Y ) on Gini Impurity
