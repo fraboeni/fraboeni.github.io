@@ -73,7 +73,13 @@ clf_gini.predict(X)
 # Look into the feature importance
 impotances_gini = clf_gini.feature_importances_
 print(impotances_gini)
+
+# Plot the entire tree
+from sklearn import tree
+tree.plot_tree(clf_gini)
 ```
+
+<img src="/files/2025-07-trees/final_tree.png" alt="Final Decision Tree" width="400">
 
 ## Find Additional Study Materials
 
