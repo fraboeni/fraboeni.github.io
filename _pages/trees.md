@@ -72,7 +72,7 @@ clf_gini.predict(X)
 
 # Look into the feature importance
 impotances_gini = clf_gini.feature_importances_
-print(impotances_gini)
+print(impotances_gini) # --> array([0.4, 0.6])
 
 # Plot the entire tree
 from sklearn import tree
