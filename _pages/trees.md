@@ -20,7 +20,7 @@ This page provides study materials on decision trees and explainable AI. It intr
 
 <div style="max-width: 800px; margin: auto;">
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/kOwanLXCbRE?si=6M6ownX2TJchIDzh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/pVoB43A-_tI?si=Ht2OMR1pT50RvNBt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 </div>
 
