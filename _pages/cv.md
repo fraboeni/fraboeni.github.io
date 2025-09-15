@@ -55,6 +55,8 @@ redirect_from:
  
  
 ## Prizes and Honors
+* 2025, *European Research Council*, ERC Starting Grant
+* 2025, *Werner-von-Siemens-Ring*, Werner-von-Siemens Fellowship
 * 2025, *SaTML Conference*, Distinguished Reviewer Award
 * 2025, *Academics*, 3rd prize in the [Rising Star Award](https://www.academics.de/services/nachwuchspreis-nachwuchswissenschaftler-des-jahres) that honors the most outstanding researchers in Germany over all universities and research institutes, over all disciplines, and over all (academic) ages
 * 2024, *Gesellschaft für Informatik*, named [GI Junior-Fellow](https://gi.de/meldung/ki-medizin-recht-diversitaet-gi-vier-informatik-talente-zu-junior-fellows) for my achievements in Trustworthy ML and diversity in computer science
