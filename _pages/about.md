@@ -15,7 +15,7 @@ Before, I was a Postdoctoral Fellow at the [Vector Institute for Artificial Inte
 Currently, I am looking for PhDs, Postdocs, and Research Interns. If you are excited about working on trustworthy ML, please drop me a mail with your CV, current transcript, and a motivation why you want to apply to my group. 
 
 # Research
-My research focus lies at the intersection of *Trustworthy Machine Learning* (ML) and *Privacy* from the perspective of individual users and data owners. 
+My research focus lies at the intersection of *Trustworthy Machine Learning* (ML) and *Privacy* from the perspective of individual users and data owners. Since September 2025, this research is supported by an [**ERC Starting Grant**](https://cispa.de/en/erc-grant-boenisch) awarded by the European Research Council. 
 
 Research has shown that trained ML models do not necessarily provide privacy for the underlying training datasets, as some attacks allow to restore (aspects of) the training data from the model parameters (e.g. [model inversion attacks](/posts/2020/12/model-inversion/)), or others allow to find out if an individual data point was included in the training dataset or not ([membership inference attacks](/posts/2021/01/membership-inference/)). Both can be harmful for the privacy of the individuals whose data is represented in the training dataset.
 Therefore, protecting privacy in ML models is a crucial task. I’m currently mainly researching in the area of [*Differential Privacy*](/posts/2021/03/differential-privacy/), a mathematical framework that provides formal privacy guarantees. I'm also looking into the practical evaluation of privacy loss and into the identification of potential sources for privacy leakage in privacy preserving technologies. Identifying such pain points allows us to develop a better understanding on why practical privacy stays behind the strong theoretical guarantees. This helps in adapting and extending theoretical frameworks, their implementations and their integration into real-worlds systems for enhanced privacy in practice.
@@ -30,9 +30,12 @@ By then developing methods that jointly optimize for different aspects, I believ
 
 
 # News
+- **September 2025:** I was awarded one of the 24 [**ERC Starting Grants**](https://cispa.de/en/erc-grant-boenisch) that were awarded this year over the entire EU+UK+Switzerland+Israel. Excited to start my project *Privacy4FMs*.
+- **September 2025:** I will be serving as an **Area Chair** for this year's ICLR conference.
+- **September 2025:** I was named a [Werner-von-Siemens-Fellow](https://siemens-ring.de/preistraeger/fellow25-boenisch/). 
 - **July 2025:** I am co-organizing two workshop at ICML'25 in Vancouver: [MemFM](https://icml2025memfm.github.io) on the Impact of Memorization on Trustworthy Foundation Models, and [DIG-BUGS](https://icml2025digbugs.github.io) on Building Reliable and Trustworthy Generative AI. Hope to see you there.
-- **June 2025:** I will be track chair the track on *Machine Learning* for this year's [ACM AsiaCCS](https://asiaccs2026.cse.iitkgp.ac.in/program-committee/) conference.
-- **June 2025:** I will be serving as an *Area Chair* for this year's NeurIPS conference.
+- **June 2025:** I will be **track chair** the track on *Machine Learning* for this year's [ACM AsiaCCS](https://asiaccs2026.cse.iitkgp.ac.in/program-committee/) conference.
+- **June 2025:** I will be serving as an **Area Chair** for this year's NeurIPS conference.
 - **May 2025:** Our SprintML Lab has three accepted papers for ICML'25.
 - **April 2025:** I was named Distinguished Reviewer for the SaTML conference the second year in a row.
 - **February 2025:** Our paper on [ownership resolution for diffusion models](https://arxiv.org/pdf/2411.12858) was accepted to CVPR'25.
