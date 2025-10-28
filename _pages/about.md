@@ -30,7 +30,7 @@ By then developing methods that jointly optimize for different aspects, I believ
 
 
 # News
-- **September 2025:** I was awarded one of the 24 [**ERC Starting Grants**](https://cispa.de/en/erc-grant-boenisch) that were awarded this year over the entire EU+UK+Switzerland+Israel. Excited to start my project *Privacy4FMs*.
+- **September 2025:** I received one of the 24 [**ERC Starting Grants**](https://cispa.de/en/erc-grant-boenisch) that were awarded this year over the entire EU+UK+Switzerland+Israel in computer science. Excited to start my project *Privacy4FMs*.
 - **September 2025:** I will be serving as an **Area Chair** for this year's ICLR conference.
 - **September 2025:** I was named a [Werner-von-Siemens-Fellow](https://siemens-ring.de/preistraeger/fellow25-boenisch/). 
 - **July 2025:** I am co-organizing two workshop at ICML'25 in Vancouver: [MemFM](https://icml2025memfm.github.io) on the Impact of Memorization on Trustworthy Foundation Models, and [DIG-BUGS](https://icml2025digbugs.github.io) on Building Reliable and Trustworthy Generative AI. Hope to see you there.
