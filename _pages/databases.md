@@ -20,7 +20,7 @@ This page provides study materials on data modeling with **relational** and **No
 
 <div style="max-width: 800px; margin: auto;">
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/pVoB43A-_tI?si=Ht2OMR1pT50RvNBt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/N-CvTuShVLI?si=Re0aHIxSjPW4hiJV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 </div>
 
@@ -30,7 +30,7 @@ This page provides study materials on data modeling with **relational** and **No
 
 📄 Please click the image to download/view the slides (PDF).
 
-<a href="{% include base_path %}/files/2025-07-trees/lecture-slides.pdf">
+<a href="{% include base_path %}/files/2025-11-datamodeling/slides.pdf">
   <img src="/files/2025-11-datamodeling/datamodel.png" alt="Slides Preview" width="800" style="display:block; margin:auto;">
 </a>
 
@@ -40,50 +40,28 @@ This page provides study materials on data modeling with **relational** and **No
 
 ## Listen to the Podcast
 
-Using the lecture notes, I made an AI-generated podcast with NotebookLM. 
+Using the lecture notes, I made an AI-generated podcast with NotebookLM for auditory learners. 
 
 <audio controls>
-  <source src="/files/2025-07-trees/trees-podcast.wav" type="audio/wav">
+  <source src="/files/2025-11-datamodeling/datamodel-podcast.wav" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
 
 ---
 
-## Play with the Code  
+## Learn Query Languages  
 
-The following code shows you how to use sklearn's decision trees. If you want to practice how to implement a decision tree, please check out the coding exercise I prepared in this [GitHub Repo](https://github.com/fraboeni/trees/blob/main/decision_trees_and_feature_importance.ipynb).
-```python
-import pandas as pd             # to have nice data frames
-from sklearn import tree        # for the decision tree
-import matplotlib.pyplot as plt # for plotting
-import numpy as np
+If you want to improve your skills on query languages, I recommend the following interactive tutorials:
+- [SQL](https://sqlbolt.com/lesson/select_queries_introduction)
+- [MongoDB](https://labex.io/tutorials/mongodb-create-mongodb-collection-420695)
 
-data = pd.read_csv("dataset_tml.csv",index_col=0)
 
-# Map categorical features and label
-data = data.replace({"Yes": 1, "No": 0}) # yes and no strings are mapped to 1 and 0
-
-# Split into features and label
-X = data.iloc[:, :-1]  # all columns except "Passed"
-Y = data.iloc[:, -1]   # the "Passed" column
-
-clf_gini = clf_gini.fit(X, Y)
-clf_gini.predict(X)
-
-# Look into the feature importance
-impotances_gini = clf_gini.feature_importances_
-print(impotances_gini) # --> array([0.4, 0.6])
-
-# Plot the entire tree
-from sklearn import tree
-tree.plot_tree(clf_gini)
-```
-
-<img src="/files/2025-07-trees/final_tree.png" alt="Final Decision Tree" width="400">
 
 ## Find Additional Study Materials
 
-1. Full [Stanford Lecture](https://www.youtube.com/watch?v=wr9gUr-eWdA) on Decision Trees
-2. Small [Lecture Video](https://www.youtube.com/watch?v=_L39rN6gz7Y ) on Gini Impurity
-3. Book: Pattern Recognition and Machine Learning, [Chapter 14.4](https://github.com/Benlau93/Data-Science-Curriculum/blob/master/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)
-4. Book: Interpretable Machine Learning, [Chapter 9](https://christophm.github.io/interpretable-ml-book/)
+1. Tutorial Comparing NoSQL and Relational [Databases](https://www.youtube.com/watch?v=_Ss42Vb1SU4) 
+2. Video Tutorial on [SQL](https://www.youtube.com/watch?v=2KCObY8ixgw) 
+3. CMU [Lecture](https://www.youtube.com/watch?v=otE2WvX3XdQ&list=PLSE8ODhjZXjYDBpQnSymaectKjxCy6BYq&index=1) on Databases
+4. Short [Intro Video](https://www.youtube.com/watch?v=0buKQHokLK8) on NoSQL
+5. Book: Database System Concepts, [Silberschatz et al.](https://www.db-book.com)
+ 
