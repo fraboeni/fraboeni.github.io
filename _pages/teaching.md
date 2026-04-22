@@ -10,6 +10,8 @@ This page provides an overview on my teaching experience so far.
 
 | Lecturer &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;           |                                                               |
 | ---------          |:---------                                                      |
+| Summer 2026       | *Lecture:* [Trustworthy Machine Learning](https://cms.cispa.saarland/tml2026) |
+| Winter 2025/26        | *Seminar:* [Differential Privacy in the Era of Foundation Models](https://cms.cispa.saarland/dp4fms) |
 | Summer 2025       | *Lecture:* [Trustworthy Machine Learning](https://cms.cispa.saarland/tml2025/) |
 | Winter 2024/25        | *Seminar:* [Differential Privacy in the Era of Foundation Models](https://cms.cispa.saarland/dp_in_ml/) |
 | Summer 2024       | *Lecture:* [Trustworthy Machine Learning](https://cms.cispa.saarland/tml/) |

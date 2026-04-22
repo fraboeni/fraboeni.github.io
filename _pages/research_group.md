@@ -5,7 +5,7 @@ permalink: /research_group/
 author_profile: true
 ---
 
-This page provides an overview on projects I am working on and students I am supervizing or have supervised in the past. 
+This page provides an overview on projects I am working on and students I am supervising or have supervised in the past. 
 
 ## Current projects and research interest
 - Individualizing privacy guarantees according to user preferences
