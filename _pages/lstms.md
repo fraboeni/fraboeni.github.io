@@ -24,7 +24,7 @@ To test and solidify your knowledge, I also provide a **small interactive quiz**
 
 <div style="max-width: 800px; margin: auto;">
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/pVoB43A-_tI?si=Ht2OMR1pT50RvNBt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://youtu.be/QGaYDW5juqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 </div>
 
@@ -34,8 +34,8 @@ To test and solidify your knowledge, I also provide a **small interactive quiz**
 
 📄 Please click the image to download/view the slides (PDF).
 
-<a href="{% include base_path %}/files/2025-07-trees/lecture-slides.pdf">
-  <img src="/files/2025-07-trees/trees.png" alt="Slides Preview" width="800" style="display:block; margin:auto;">
+<a href="{% include base_path %}/files/2026-04-lstms/lstms-slides.pdf">
+  <img src="/files/2026-04-lstms/lstms-slide.png" alt="Slides Preview" width="800" style="display:block; margin:auto;">
 </a>
 
 
@@ -47,9 +47,11 @@ To test and solidify your knowledge, I also provide a **small interactive quiz**
 Using the lecture notes, I made an AI-generated podcast with NotebookLM. 
 
 <audio controls>
-  <source src="/files/2025-07-trees/trees-podcast.wav" type="audio/wav">
+  <source src="{{ '/files/2026-04-lstms/lstms.mp3' | relative_url }}" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+
+
 
 ---
 
@@ -73,7 +75,11 @@ You can test your understanding of the lecture with this interactive quiz. The c
 
 If you have questions that you want to discuss during the in-person session, please submit them through the form.
 
+<div style="max-width: 800px; margin: auto;">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdrRyKRrbv516NnUqf2glT4SHIZob0xHZKdseaG6SDrlXgFZw/viewform?embedded=true" width="640" height="429" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+</div>
 
 ## Find Additional Study Materials
 
